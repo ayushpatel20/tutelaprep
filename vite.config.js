@@ -9,7 +9,7 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url));
 function getHtmlEntries(dir, list = {}) {
   const files = readdirSync(dir);
   for (const file of files) {
-    if (file === 'node_modules' || file === 'cloned' || file === 'dist' || file.startsWith('.')) continue;
+    if (file === 'node_modules' || file === 'cloned' || file === 'dist' || file === 'scratch' || file === 'public' || file.startsWith('.')) continue;
     const fullPath = join(dir, file);
     if (statSync(fullPath).isDirectory()) {
       getHtmlEntries(fullPath, list);

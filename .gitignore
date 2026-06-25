@@ -35,3 +35,6 @@ dist-ssr/
 
 # Temporary scratch scripts
 scratch/
+
+# Local junction folder (Windows only)
+public/
