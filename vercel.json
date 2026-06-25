@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build && mkdir -p dist/assets/videos dist/assets/images dist/assets/css dist/assets/js dist/assets/fonts && rsync -a assets/videos/ dist/assets/videos/ && rsync -a assets/images/ dist/assets/images/ && rsync -a assets/css/ dist/assets/css/ && rsync -a assets/js/ dist/assets/js/ && rsync -a assets/fonts/ dist/assets/fonts/",
+  "buildCommand": "npm run build && mkdir -p dist/assets/images dist/assets/css dist/assets/js dist/assets/fonts && rsync -a assets/images/ dist/assets/images/ && rsync -a assets/css/ dist/assets/css/ && rsync -a assets/js/ dist/assets/js/ && rsync -a assets/fonts/ dist/assets/fonts/",
   "outputDirectory": "dist",
   "installCommand": "npm install",
   "framework": null
