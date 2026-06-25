@@ -1,0 +1,2203 @@
+@import url('./font-manrope.css');
+
+@import url('./font-brygada.css');
+
+@import url('./font-inter.css');
+
+
+
+
+
+:root{
+
+--tutela-base:#0d0d0d;
+
+--bg-light-gray:#ececec;
+
+--sec-bg:#1a1a1a;
+
+--border-color:#525252;
+
+}
+
+
+
+body{font-family: "Manrope", sans-serif;}
+
+a{outline: none;text-decoration: none !important;color:#229bcb;}
+
+h1{font-size: 3rem;line-height: 1.2em;}
+
+h2{color: #000000;font-size: 2.75rem;line-height: 1.1em;font-family: "Manrope", sans-serif;}
+
+h3{color: #000000;font-size: 1.57rem;font-weight: 500;font-family: "Manrope", sans-serif;}
+.text-danger {
+  color: rgb(173, 113, 122) !important;
+}
+.text-deep-gray{ color:#525D6A !important}
+
+.text-light-gray{ color:#d4d4d4 !important}
+
+p, .btn, ul li{font:400 16px/26px "Manrope", sans-serif}
+
+.tutela-bg-dark{background-color:var(--tutela-base) ;}
+
+.tutela-bg-light-gray{background-color:var(--bg-light-gray) ;}
+
+li ul {margin: 0.6rem;margin-bottom: 0.6rem;}
+
+.top-header ul li a, .top-header a.cart{font:600 14px/22px "Manrope", sans-serif;}
+.top-header a, .top-header a.cart{font:600 14px/22px "Manrope", sans-serif;}
+.notification {padding: 0px 8px;font-size: 11px; text-align: center;}
+.univer img, .tutela img{width:300px}
+.verticalline{height: 45px; margin-right: 5px;}
+
+.main-header .nav-link, .btn-college-kit, .menu-btn a{font:700 15px/22px "Manrope", sans-serif;color: #ffffff;}
+.navbar .nav-link:focus, .navbar .nav-link:hover, .navbar .navbar-nav .nav-item .active {
+  color: rgb(173, 113, 122) !important;
+}
+.main-header{padding: 6px 0;}
+.toggler-icon {width: 24px;height: 24px;}
+.sticky{position: fixed;top: 0;width: 100%;left: 0;background-color: #0d0d0d;z-index: 999;border: 0 !important;transition:1s;border-radius: 0 !important;}
+.main-header .navbar-nav .dropdown-menu{border-radius: 0;padding: 0;}
+.main-header .dropdown-toggle::after{filter: invert(1);}
+.main-header .navbar-nav .dropdown-menu .dropdown-item{border-bottom: 2px solid #f5f5f5;padding-bottom: 10px;}
+.main-header .nav-link{padding: 10px 22px !important;}
+
+.top-header a.cart span{width: 26px;display: inline-block;line-height: 15px;text-align: center;}
+
+.btn.btn-outline-secondary{border-color: #525252;border-width: 2px;}
+
+.text-secondary1{color: var(--border-color);}
+
+.border-secondary{border-color: #525252 !important;}
+
+.menu-btn a.login-btn{color: #1b1b1b;padding: 11px 20px;}
+
+
+.banner{background: url(../images/banner-tutela.webp)no-repeat center;background-size: cover;height: 488px;display: flex;align-items: center;}
+
+.banner-text{text-align: center; margin-bottom: 15px;}
+
+.banner-text h1{font:300 48px/61px "Manrope", sans-serif;letter-spacing: -2%;color: #d4d4d4;}
+
+.banner-single.sat-banner .banner-text h1{font:700 58px/60px "Brygada 1918", serif;}
+
+.banner-text-shape::after{content: "";position: absolute; /*bottom: -70px;*/ width: 100%;height: 100%;background: url(../images/shape2.svg)no-repeat;display: block;left: 0;}
+
+h2.title1.small-shape-title span::after{background: url(../images/shape3.svg)no-repeat;}
+
+.banner-text-shape.banner-text-shape-home::after{background: url(../images/shape.svg)no-repeat;}
+
+.banner-text-shape.banner-text-shape-blog::after{background: url(../images/shape4.svg)no-repeat;bottom: -68px;}
+
+.banner-text p{color:#57616e;line-height: 1.6rem;margin-bottom: 30px;}
+
+.banner-single .banner-text p{color:#E5E5E7;font:400 16px/26px "Manrope", sans-serif;}
+
+.btn-phone a, a.knowmorebtn{background-color:#229bcb;color: #ffffff;padding: 12px 38px;border-radius: 50px;letter-spacing: 2px;} 
+
+.border-redious-10{border-radius: 10px;}
+
+.sec-bg{background-color: var(--sec-bg);}
+
+.home-contact-sec{background: url(../images/home-contact-bg.webp) no-repeat center;background-size: cover;border-radius: 10px;}
+
+.overlay{background: linear-gradient(45deg, black, transparent);border-radius: 12px;}
+
+.tab-bg {background-color: #242424;padding: 15px 30px;border-radius: 15px;}
+
+.btn-dots{background-color:#292d30;font-size: 1rem;color: #ffffff;}
+
+.nav-tabs .nav-link{border: 2px solid #858C95;border-radius: .357rem;margin-right: 15px; color: #858C95;font:700 15px/26px "Manrope", sans-serif;padding: 0.5rem 2rem;}
+
+.nav-tabs .nav-link.active{background-color: transparent;color: #ffffff;}
+
+.testimonial-box p{font: 400 15px/22px "Manrope", sans-serif;}
+
+.testimonial-box p span{font:500 17px/26px "Manrope", sans-serif;}
+
+.testimonial-box{position: absolute;width: 100%;height: 100%;bottom: 0px;}
+
+.student-detail-box img{border-radius: 14px;}
+.testimonial-box {background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%);border-radius: 12px;}
+.testimonial-box p{font-size: .9rem;color: #ffffff;position: absolute;bottom: 0;left: 1rem;}
+.testimonial-box p span{font-weight: bold;}
+.sec-mb{margin-bottom :2rem;}
+.sec-py{padding-top: 4rem;padding-bottom: 4rem;}
+.diagnostic-price h2.title1{padding: 32px 0;}
+.sec-padding{padding: 64px;}
+.video-sec-padding{padding: 80px;}
+.sec-py-2{padding-top: 2rem;padding-bottom: 2rem;}
+.ptb{padding-top: 8rem;padding-bottom: 8rem;}
+
+/* .student-details-sec .owl-carousel .owl-stage, .students-sec .owl-carousel .owl-stage, .instagram-feed-sec .owl-carousel .owl-stage{right: 30px;} */
+
+.student-details-sec .owl-nav button.owl-prev, .students-sec .owl-nav button.owl-prev, .instagram-feed-sec .owl-nav button.owl-prev{color: #979AA0;position: absolute;left: 0px;}
+
+.student-details-sec .owl-carousel .owl-nav button.owl-next, .students-sec .owl-carousel .owl-nav button.owl-next, .instagram-feed-sec .owl-carousel .owl-nav button.owl-next{color: #979AA0;position: absolute;right: 0;}
+
+.student-details-sec .owl-theme .owl-nav [class*=owl-]:hover, .students-sec .owl-theme .owl-nav [class*=owl-]:hover, .instagram-feed-sec .owl-theme .owl-nav [class*=owl-]:hover{background-color: transparent;color: #fff;}
+
+.student-details-sec .owl-theme .owl-nav, .students-sec .owl-theme .owl-nav, .instagram-feed-sec .owl-theme .owl-nav{position: relative;}
+
+.tutela-alumni-sec h2.title, .tutela-highlights-sec h2.title{font:700 46px/30px "Manrope", sans-serif;color: #1b1b1b;}
+
+.tutela-alumni-sec h3, .tutela-highlights-sec h3{font:300 36px/60px "Manrope", sans-serif;color: #0a0a0a;}
+
+.tutela-alumni-sec p, .tutela-highlights-sec p{font:400 16px/26px "Manrope", sans-serif;color: #525D6A;letter-spacing: -0.1px;}
+.tutela-highlights-sec h6 {
+  font: 600 15px/22px "Manrope", sans-serif;
+  color: #323539;
+}
+.tutela-highlights-sec p span{font:400 16px/26px "Manrope", sans-serif;color: #525D6A;letter-spacing: -0.1px;}
+
+.start-journey-btn{background-color: #1B1B1B;border: 2px solid #525252;font:700 16px/26px "Manrope", sans-serif;}
+
+h2.title1{font:300 36px/60px "Manrope", sans-serif;color: #d4d4d4;}
+h2.title1.book-consultation{font-size: 1.25rem;}
+
+h2.title1 span{font:700 42px/60px "Brygada 1918", serif;color:#d4d4d4;}
+
+h2.title1 span::after{content: "";position: absolute;bottom: -8px;width: 100%;height: 12%;background: url(../images/shape1.png)no-repeat;display: block;left: 0;}
+h2.title1 span.fs-2::after {
+ bottom: -8px;
+}
+.sat-test-date h2.title1 span::after{background: url(../images/shape5.svg)no-repeat;}
+.title21 span::after{left: 10px !important;}
+h2.title1 span.digital-sat-exam::after{background: url(../images/shape5.svg)no-repeat;}
+
+h2.title1 span.digital-sat-exam{letter-spacing: -0.99px;}    
+
+h2.title2 span::after{background: url(../images/shape.svg)no-repeat;}
+
+h2.title3, h2.title3 span, h2.title4, h2.title4 span {
+  font: 38px/48px "Brygada 1918", serif;
+}
+
+h2.title4 span::after{content: "";position: absolute;bottom: -48px;width: 100%;height: 100%;background: url(../images/shape1.png)no-repeat;display: block;left: 0;}
+
+
+.title-text{font:400 18px/26px "Manrope", sans-serif; color: #525D6A; letter-spacing:-0.1px ;margin: 36px 0 !important;}
+
+.students-box p, .home-contact-sec p{font: 400 16px/26px "Manrope", sans-serif;}
+
+.student-description h3{font: 600 15px/22px "Manrope", sans-serif;color: #323539;margin-bottom: 0;}
+
+.student-description p{font: 500 14px/20px "Manrope", sans-serif;color: #858C95;}
+
+.student-image img {width: 50px !important; height: 50px;}
+
+.students-box{padding: 1.5rem !important;}
+.tutela-connect-sec .owl-theme .owl-nav {position: absolute;width: 100%;}
+.tutela-connect-sec .owl-theme .owl-nav [class*=owl-]:hover{color: inherit;}
+.tutela-connect-sec .tutela-connect-describe ul li{margin-bottom: 20px;}
+.why-us-home-text{border: 1px solid #E5E5E7;border-radius: 12px;}
+.why-us-home-image img {background: #181818;padding: 12px;border-radius: 8px;}
+.why-us-home-text h3, .event-signup h3{font:600 22px/30px "Brygada 1918", serif;color:#000;margin: 20px 0 15px;}
+.why-us-home-text p, .event-description p{font:400 16px/24px "Manrope", sans-serif;color: #525D6A;}
+.why-us-home-text:hover .why-us-home-image img, .why-us-home-image.hover1 img{background: #AD717A;}
+.table-chart ul.first-list li, .table-chart ul.second-list li, .table-chart ul.third-list li, .table-chart td {color:#939393;font:400 16px/24px "Manrope", sans-serif;background-color: transparent;}
+
+
+table.dataTable.no-footer {
+  border-bottom: none;
+}
+.table-chart ul li.list-group-item, .table-chart td{border-color:#f0f0f0;padding: 1rem !important;border-radius: 0;}
+
+
+
+.table-chart ul li.list-group-item:first-child, .table-chart thead td{background-color:#292d30;}
+
+
+
+.table-chart ul.first-list li.list-group-item:first-child, .table-chart thead td:first-child{border-radius: 12px 0px 0px 0px;}
+
+
+
+.table-chart ul.third-list li.list-group-item:first-child, .table-chart thead td:last-child{border-radius: 0px 12px 0px 0px;}
+
+
+
+.table-chart ul.first-list li.list-group-item:last-child, .table-chart ul.second-list li.list-group-item:last-child, .table-chart ul.third-list li.list-group-item:last-child{border-bottom: 0;}
+
+
+
+.table-chart ul.first-list li.list-group-item, .table-chart ul.second-list li.list-group-item{border-right:0 ;}
+
+
+
+.table-chart ul.second-list li.list-group-item, .table-chart ul.third-list li.list-group-item{border-left:0 ;}
+
+.table-chart tbody td:first-child{border-left: 1px solid;}
+
+.table-chart tbody td:last-child{border-right: 1px solid;}
+
+ul.first-list{width: 35%;}
+
+.owl-theme .owl-nav [class*=owl-]:hover{background-color: transparent;}
+
+ul.second-list{width: 55%;}
+
+ul.third-list{width: 10%;}
+
+.home-pagination{border: 1px solid #323030;}
+
+.home-pagination .page-link{color: #939393;background-color: transparent;border: 0;}
+
+li.page-item.active{background-color: #ffffff;border-radius: 0.375rem;padding: 0 4px;}
+
+li.page-item.active a.page-link{color: #000000;}
+
+ul.list-group.third-list li span, .bg-score{
+	background-color: #242424;
+	display: inline-block;
+	padding: 0px 7px;
+	border-radius: 2px;
+	color: #fff;
+}
+
+.home-contact-sec .nav-pills .nav-link, .book-free-sec .nav-pills .nav-link{border: 2px solid #858C95;border-radius: .357rem;margin-right: 10px; color: #858C95;font:700 15px/26px "Manrope", sans-serif;}
+
+.home-contact-sec .nav-pills .nav-link.active, .book-free-sec .nav-pills .nav-link.active{background-color: transparent;color: #1b1b1b;border: 2px solid #1b1b1b;}
+
+.home-contact-sec h6{font: 500 15px/22px "Manrope", sans-serif;color: #858C95;}
+
+form label{font: 500 14px/20px "Manrope", sans-serif;color:#323539;}
+
+.home-contact-sec .form-control, .home-contact-sec .form-select, .form-select, .work-with-us .form-control, .work-with-us .form-select, .modal .form-control, .modal .form-select, .event-signup .form-control{border: 1px solid #E5E5E7;background-color: #F8F9FB;}
+
+.dropdown-toggle::after{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");background-repeat: no-repeat;background-position: right .75rem center;background-size: 16px 12px;width: 27px;height: 25px;position: absolute;border: 0;}
+
+.input-group .btn, .input-group select.input-group-text{position: relative;font-size: 14px;padding-right: 0rem;background-color: #F8F9FB;    border: 1px solid #E5E5E7 !important;} 
+
+/*------single page------*/
+
+.student-detail-box .testimonial-box img{border-radius: 2px;height: 30px !important;margin-bottom: 20px;margin-right:20px;width:50px;padding-left: 10px;}
+
+.bg-layer{background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0E0E0E 100%);
+
+border-radius: 24px;}
+
+span.banner-text-shape, span.partner-banner-text-shape{font: 700 57px/61px "Brygada 1918", serif;}
+
+.sat-banner span.banner-text-shape{font: 700 48px/60px "Brygada 1918", serif;}
+
+.bg-layer .owl-carousel .owl-item.cloned .student-detail-box .testimonial-box img{display: none;}
+
+.bg-layer .owl-carousel .owl-item.cloned:first-child .overlay-student-img{background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0E0E0E 100%), url(../images/student11.png);}
+
+.banner-single .btn.btn-outline-secondary{background: #1B1B1B;border: 2px solid #525252;box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);border-radius: 6px;padding: 12px 20px;}
+
+.banner-single a.btn.bg-white{border-radius: 6px;padding: 12px 20px;}
+
+.bg-layer .owl-carousel .owl-item.cloned .overlay-student-img{position: absolute;
+
+background: linear-gradient(270deg, #0E0E0E 83.8%, rgba(0, 0, 0, 0) 162.7%), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);box-shadow: 0px 6px 10px 4px rgba(0, 0, 0, 0.15);filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.3));box-shadow: 0px 0.595024px 1.19005px -0.595024px rgba(16, 24, 40, 0.1), 0px 0.595024px 1.78507px rgba(16, 24, 40, 0.1);height: 100%;width: 100%;top: 0;border-radius: 12px;}
+
+.btn-list a.btn.btn-outline-secondary {border: 2px solid #858C95;color: #858C95;}
+
+.btn-list a.btn.btn-outline-secondary:hover{border: 2px solid #1B1B1B;color: #777777;background-color: transparent;}
+
+.btn-light {
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #000000;
+}
+
+.score-percent, .bg-gray{background-color:#F5F5F5;} 
+
+.score-percent h2{font: 600 64px/30px "Brygada 1918", serif;color: #181818;}
+
+.score-percent h3{font:400 16px/24px "Manrope", sans-serif;color: #858C95;padding: 20px 0 0;}
+
+.score-percent h4{font:500 18px/24px  "Manrope", sans-serif;color: #000000;}
+
+.owl-carousel2.owl-carousel .owl-stage{padding-left: 0 !important;}   
+
+
+
+.modus-sec{background: url(../images/modus-bg.webp) no-repeat center;background-size: cover;border-radius: 10px;}
+
+.overlay1-bg {background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60.52%, #000000 100%), linear-gradient(180deg, #0f0e0e 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));border-radius: 12px;width: 100%;height: 100%;}
+.dropdown-item.active, .dropdown-item:active{background-color:transparent;color: #000000;}
+.tutela-connect-describe h3{font: 600 22px/30px "Brygada 1918", serif;color: #0E0E0E;}
+
+.tutela-connect-describe ul li{font:400 16px/26px "Manrope", sans-serif;color:#525D6A;}
+
+.timeline::after {content: '';position: absolute;width: 2px;background: url(../images/line.png)repeat-y;top: 111px;bottom: 100px;left: 50%;margin-left: -1px;}
+
+.timeline-container {padding: 15px 30px;position: relative;background: inherit;width: 50%;font-size: 0.85rem;}
+
+.timeline-container.left {left: 0;}
+
+.timeline-container.right {left: 50%;}
+.timeline-container span {
+	background: #858c95;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeline-container.left span {position: absolute;transform: translate(-50%, -50%);left: 100%;top: 54%;color: #ffffff;z-index: 9;}
+
+.timeline-container.right span {position: absolute;transform: translate(-50%, -50%);right: 93.4%;top:54%;color: #ffffff;z-index: 9;}
+
+.timeline-container.right::after {left: 0%;transform: translateX(-50%);}
+
+.timeline-container.right::before {left: 8px;}
+
+.timeline-container.right .icon {left: 56px;}
+
+.timeline-container .content {padding: 30px 90px 30px 30px;background: #ffffff;position: relative;border-radius: 12px;}
+
+.timeline-container.right .content {padding: 30px;border-radius:12px;}
+
+.timeline-container .content h2 {margin: 0 0 15px 0;font: 600 22px/30px "Brygada 1918", serif;color: #000;}
+
+.timeline-container .content p {margin: 0;font-size: 16px;line-height: 24px;color: #525D6A;font-weight: 400;}
+
+@media (max-width: 767.98px) {
+
+.timeline::after {left: 50%;}
+
+.timeline-container {width: 100%;}
+
+.timeline-container.right {left: 0%;}
+
+.timeline-container.left::after, 
+
+.timeline-container.right::after {left: 45%;}
+
+.timeline-container.left::before,
+
+.timeline-container.right::before {left: 100px;border-color: transparent #006E51 transparent transparent;}
+
+.timeline-container.left .icon,
+
+.timeline-container.right .icon {right: auto;left: 146px;}
+
+/* .timeline-container.left .content,
+
+.timeline-container.right .content {padding: 30px 30px 30px 90px;border-radius: 500px 0 0 500px;} */
+
+}
+
+
+
+.tutela-connect-sec .owl-carousel .owl-item .tutela-connect-bg{background: linear-gradient(270deg, #0E0E0E 83.8%, rgba(0, 0, 0, 0) 162.7%), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);}
+
+.tutela-connect-sec .owl-carousel .owl-item.active .tutela-connect-bg{background: #ffffff;}
+
+.tutela-connect-sec .owl-nav button.owl-prev{position: absolute;left: 0;top: 40%;}
+
+.tutela-connect-sec .owl-nav button.owl-next{position: absolute;right: 0;top: 40%;}
+
+.logo-single-page-bg {background-color: #ffffff;padding: 1rem;}
+
+.media-section .owl-carousel .owl-stage-outer .owl-stage:first-child {padding-left: 0 !important;}
+
+h2.title1 b {font: 700 42px / 60px "Brygada 1918", serif;}
+
+.impact-content {position: relative;width: 100%;}
+
+.image {display: block;width: 100%;height: auto;}
+
+.impact-overlay {position: absolute;top: 0;bottom: 0;left: 0;right: 0;height: 100%;width: 100%;opacity: 1;transition: .5s ease;background-color: #ffffff;}
+
+.impact-content:hover .impact-overlay {opacity: 1;}
+
+.text {color: white;font-size: 20px;position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);text-align: center;}
+
+.sat-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/sat-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.ap-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/ap-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.act-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/act-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.psat-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/psat-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.tmua-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/tmua-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.esat-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/esat-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.ibmyp-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/ibmyp-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.ibdp-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/ibdp-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.igcse-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/igcse-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.amc-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/amc-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+
+.blog-banner.media-coverage-banner{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/media-coverage-banner.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+/* .event-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.3) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 85.02%), url(../images/event-banner-single.webp);background-size: cover;height: 488px;background-repeat: no-repeat;background-position: center;} */
+.banner-testimonial{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/testimonial-banner-single.webp)no-repeat center;background-size: cover;padding: 145px 0;display: flex;align-items: center;}
+.partner-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/partner-banner-single.webp)no-repeat center;background-size: cover;padding: 145px 0;display: flex;align-items: center;}
+
+.about-sat-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/about-sat-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.about-act-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/about-act-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.about-ap-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/about-ap-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.about-psat-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/about-psat-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.about-tmua-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/about-tmua-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.about-ibmyp-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/ibmyp-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.about-ibdp-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/ibdp-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.about-igcse-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/igcse-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+.about-amc-banner-single{background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 13.36%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85.02%), url(../images/amc-banner-single.webp);background-size: cover;padding: 145px 0;background-repeat: no-repeat;background-position: center;}
+
+.blog-single-content img{
+  width: 100% !important;
+  height: auto !important;
+}
+.sat-single .accodion-head h2 {margin-top: -6px;margin-right: 72px;margin-bottom: 0;}
+
+.accordion-button:focus{box-shadow: none;}
+
+.prep-text, .banner-text-right h2{font:300 48px/60px "Manrope", sans-serif;color:#D4D4D4;}
+
+.course-dropdown .dropdown a.dropdown-toggle{color: #ffffff;}
+
+.course-dropdown .dropdown{background-color: #1B1B1B;border: 2px solid #525252;color: #ffffff;padding: 9px 30px;border-radius: 50px;}
+
+.sat-banner span.banner-text-shape{font: 700 58px/60px "Brygada 1918", serif;}
+
+.banner-text-right{font:300 48px/60px "Manrope", sans-serif;display: flex;justify-content: end;}
+
+.sat-banner .dropdown-toggle::after{filter: invert(1);}
+
+.sat-banner .dropdown-menu {padding: 0 10px;width: 100%;margin-top: 52px !important;transform: translateX(0px) !important;}
+
+.sat-banner .dropdown-menu a.dropdown-item{border-bottom: 1px solid #d4d4d4;color: #1B1B1B;font-size: 14px;}
+
+.sidebar {position: sticky;top:11%;right: 0;z-index: 99;text-transform: uppercase;
+
+padding: 1vw;}
+
+/* .main1{padding: 1vw 0;}*/
+.main1{padding: 0;}
+
+.accordion-bg-sat{background-color: #ffffff;border-radius: 12px;margin-bottom: 12px !important;}
+
+.accordion-button[aria-expanded=true]::before {content: "";position: absolute;font:500 14px/20px "Manrope", sans-serif;right: 25px;color: #323539;}
+
+.accordion-button[aria-expanded=false]::before {content: ""; position: absolute;font:500 14px/20px "Manrope", sans-serif;right: 25px;color: #323539;}
+
+.faq-sec .accordion-button::before{color: #ffffff;}
+
+.faq-sec .accordion-button::after {filter: invert(1);}
+.sat-scores-sat-single{padding-right: 32px !important;padding-left: 32px !important;margin-bottom: 32px;} 
+.sat-scores-sat-single .owl-theme .owl-nav {margin: 0px 0;padding-bottom: 1px;}  
+
+.diagnostic-price .owl-theme .owl-dots .owl-dot.active span, .diagnostic-price .owl-theme .owl-dots .owl-dot:hover span{background: #ffffff;}
+.diagnostic-price .owl-theme .owl-dots .owl-dot span{background: #858C95;}
+.accordion-button[aria-expanded=false]::after{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");}
+
+.accordion-button[aria-expanded=true]::after{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E")}
+
+.accordion-button::after {position: absolute;right: -4px; transition: all 0.5s;}
+
+.accordion-button::after {transition: all 0.5s;}
+
+.accordion-button{padding: 0px 0 0px 0px;margin: 10px;border: 1.67px solid #323539;width: 16px !important;text-align: center;border-radius: 50% !important;height: 16px;background-color: transparent !important;}
+
+.faq-sec .accordion-button{border: 1.67px solid #ffffff;}
+
+.sat-single .accordion-body {margin-left: 1rem;margin-right: 1rem;margin-top: 2rem; padding: 0;border-top:2px solid #F5F5F5;padding-top: 32px;}
+
+.sat-single .list-group-item-action{background-color: #242424;border: 2px solid #858C95;color: #858C95;margin-bottom: 16px;border-radius: 6px;text-align: center;font: 700 15px/26px "Manrope", sans-serif;text-transform: none;}
+.accordion-bg-sat .accordion-item{border: 0;}
+
+.sat-single .sidebar{background-color: #242424;padding: 15px;border-radius: 12px;}
+
+.sat-single .sidebar .list-group-item.active{background-color:#393939;border: 1px solid #ffffff; color: #ffffff;}
+
+.sat-single .accordion-body h6{font: 600 22px/30px "Brygada 1918", serif;color: #0E0E0E;}
+
+.sat-single .accordion-body h6 span{font: 300 18px / 100% "Manrope", sans-serif;color:#525D6A;}
+
+.sat-single .start-journey-btn {font: 700 15px / 26px "Manrope", sans-serif;}
+
+.accodion-head h2, .diagnostic-price h5.card-title{font: 600 22px/30px "Brygada 1918", serif;color: #0E0E0E;}
+
+.accodion-head p{font: 300 18px/100% "Manrope", sans-serif;color: #525D6A;}
+
+.sat-single .accordion-body p, .sat-single .accordion-body ul li, .sat-single .accordion-body ol li,.sat-single .accordion-body td, .sat-single p {font:400 16px/26px "Manrope", sans-serif; color:#525D6A;}
+
+.sat-single .testimonial-box p{color: #ffffff;font:400 14px/22px "Manrope", sans-serif;}
+
+.sat-single .accordion-body th {font-size: 16px; color:#0E0E0E;}
+
+.sat-single .accordion-body h5.card-title{font: 700 22px / 30px "Manrope", sans-serif;color:#323539;margin-top: 20px;}
+
+.sat-single .accordion-body .card a.btn.btn-outline-secondary{border: 1px solid #E5E5E7;font: 600 15px / 22px "Manrope", sans-serif;color:#323539; }
+
+.sat-single .accordion-body .card a.btn.btn-outline-secondary:hover{background-color: #F5F5F5;}
+
+.sat-single .accordion-body .card a.btn.btn-outline-secondary img{filter: brightness(.1);}
+
+.sat-group .owl-carousel .owl-stage{right: 30px;}
+.accordion-bg-sat.sat-group .owl-carousel .owl-stage{right: 0px;}
+.accordion-bg-sat .owl-theme .owl-nav [class*=owl-]:hover{color: inherit;}
+.sat-group .owl-nav button.owl-prev, .sat-scores-sat-single .owl-nav button.owl-prev{color: #979AA0;position: absolute;left: 15px;}
+.faq-sec .accordion-bg-sat{padding: 0;}
+.sat-group .owl-nav button.owl-next, .sat-scores-sat-single .owl-nav button.owl-next{color: #979AA0;position: absolute;right: 15px;}
+
+.sat-scores-sat-single .owl-carousel .owl-stage:first-child{padding-left: 0 !important;}
+
+.sat-scores-sat-single .owl-nav button.owl-next, .sat-scores-sat-single .owl-nav button.owl-prev{bottom: -45px;}
+
+.sat-test-date td, .sat-test-date th, .sat-single .accordion-body td, .sat-single .accordion-body th, .event-signup th{padding: 2rem;}
+
+.shape2::after{content: "";position: absolute;background: url(../images/shape2.svg)no-repeat;width: 100%;height: 100%;display: block;}
+.shape22::after{content: "";position: absolute;background: url(../images/shape1.png)no-repeat;width: 100%;height: 100%;display: block;bottom: -84px;}
+.accordion-bg-sat{padding: 1.5rem 1rem;;}
+
+.nav-tabs .nav-link.active{background-color: rgba(255, 255, 255, 0.1);}
+
+.table-bg table .table-active{--bs-table-accent-bg: #F8F9FB;border-color: #E5E5E7;}
+
+.diagnostic-price .card p, .table-bg table td{font: 400 16px/24px "Manrope", sans-serif;color: #858C95;}
+
+.diagnostic-price .card h3{font: 700 26px/44px "Manrope", sans-serif;color: #323539;}
+
+.table-bg table th{font: 600 16px/24px "Manrope", sans-serif;color:#323539;}
+
+.faq-sec h2{font: 300 20px/25px "Manrope", sans-serif;}
+
+.faq-sec .accordion-body p{font: 400 16px/26px "Manrope", sans-serif; color: #D4D4D4;}
+
+.faq-sec .accordion-body ul li{font: 400 16px/26px "Manrope", sans-serif; color: #D4D4D4;}
+
+.faq-sec h2.title1 {font: 300 36px / 60px "Manrope", sans-serif;color: #d4d4d4;}
+
+.blog-banner{background:url(../images/blog-banner.webp)no-repeat center;background-size: cover;padding: 181px 0;}
+
+.blog-bg{background-color: #F2E6E7 !important;border: 2px solid #525252;border-radius: 12px;}
+
+#list-item-2 .blog-tab .nav-tabs .nav-link.active {background-color: transparent;color: #777777;border: 2px solid #1B1B1B;}
+
+#list-item-2 .nav-tabs .nav-link:focus, #list-item-2 .nav-tabs .nav-link:hover {border-color: inherit;}
+
+.blog-tab-content{border-radius: 12px;}
+
+.blog-tab-content img{border-radius: 12px 0px 0px 12px;}
+
+.tag-text span{font: 700 15px / 26px "Manrope", sans-serif;color: #1B1B1B;}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{border-color: #858C95;}
+
+.article-text span.badge.text-bg-danger{background-color: #AD717A !important;font: 500 16px/24px "Inter", sans-serif; padding: 4px 12.3px;}
+.blog-bg .owl-theme .owl-dots .owl-dot.active span, .blog-bg .owl-theme .owl-dots .owl-dot:hover span{background-color: #181818;}
+.blog-bg .owl-theme .owl-dots .owl-dot span{background-color: #858C95;}
+.owl-carousel.owl-carousel9 .owl-item img{width: auto;}
+
+.owl-theme.owl-carousel9 .owl-nav.disabled+.owl-dots {margin-top: 30px;margin-bottom: 30px;}
+
+.article-text h3, .blog-text h3{font: 700 22px/30px "Brygada 1918", serif;color: #181818;padding: 20px 0;}
+
+.article-text p, .blog-text p{font: 400 16px/24px "Manrope", sans-serif;color: #323539;}
+
+/* .owl-theme.owl-carousel9 .owl-dots .owl-dot.active span{width: 34px;height: 12px;background-color: #181818;} */
+
+.owl-theme.owl-dots .owl-dot span{width: 12px;height: 12px;background-color: #858C95;}
+.owl-dots .owl-dot.active span{width: 34px;height: 12px;background-color: #ffffff;}
+
+.blog-description .student-description h3, .blog-tab-content .student-description h3, .event-description .event-venue h3{color:#181818;}
+
+.blog-description .student-description p, .blog-tab-content .student-description p{color:#323539;}
+.blog-description img{
+	height: 238px;
+	object-fit: cover;
+	width: 100%;
+}
+
+.blog-bg-single{background: linear-gradient(180deg, #777777 0%, #F2E6E7 42.54%);}
+
+
+
+.blog-single-bg, .content-blog-bg {background-color:#F2E6E7 !important;}
+
+.blog-banner-text h1{font: 700 52px/60px "Brygada 1918", serif;color: #323539;}
+
+.blog-banner-text p{font: 400 18px/26px "Manrope", sans-serif;color: #858C95;}
+
+.blog-banner-text{padding: 80px 112px 92px;}
+
+.blog-single-banner{height: 402px;}
+
+.blog-single-banner.terms-sec{height: 282px;}
+
+.tutela-bg-dark .blog-single-content{background-color: #1B1B1B;border: 2px solid #525252;border-radius: 12px;}
+
+.blog-tab .nav-tabs .nav-link.active{border: 2px solid #1B1B1B;color: #1B1B1B;background: rgba(119, 119, 119, 0.1);}
+
+.blog-single-content{border-radius: 12px;}
+
+.blog-single-content p, .blog-single-content ul li, .blog-single-content td, .blog-single-content th{font: 400 16px/24px "Manrope", sans-serif;color: #858C95;}
+
+.blog-single-content ul li{padding-bottom: 10px;}
+
+.blog-single-content h2{font: 500 22px/30px "Manrope", sans-serif;color: #323539;margin-bottom: 20px;}
+
+.blog-single-content .blog-heading-content{margin: 50px 0;}
+
+body.blog-single-bg1 {background-color: #0d0d0d;}
+
+.blog-single-content .blog-text h3{color: #ffffff;}
+
+.blog-single-content .blog-text p{color:#979AA0;}
+
+.blog-single-content .blog-description .student-description h3{color: #F9F9F9;}
+
+.blog-single-content .blog-description .student-description p{color: #979AA0;}
+
+h2.title-blog{font: 300 42px / 60px "Manrope", sans-serif;color: #D4D4D4;}
+
+h2.title-blog span{position: relative;font: 700 36px/60px "Manrope", sans-serif;color: #ffffff;display: inline-block;}
+
+h2.title-blog span:after{content: "";position: absolute;background: url(../images/blog-shape.svg)no-repeat;width: 100%;height: 100%;display: block;left: 0;}
+
+.about-banner{background:url(../images/about-banner.webp)no-repeat center;background-size: cover;padding: 181px 0;}
+
+.about-shape-title span::after{content: "";position: absolute;background: url(../images/about-shape.svg)no-repeat;width: 100%;height: 100%;display: block;}
+
+.about-banner-text h2{font: 600 22px/30px "Brygada 1918", serif;color: #ffffff;margin-bottom: 20px;}
+
+.banner-single .about-banner-text p{color: #F9F9F9;font: 400 18px / 26px "Manrope", sans-serif;}
+
+.about-page-sec p{font: 400 16px / 26px "Manrope", sans-serif;color: #525D6A;}
+
+.team-single-sec{background-color:#F2E6E7;}
+
+.team-shape h2.title1 span::after {content: "";position: absolute;bottom: -57px;width: 162%;height: 100%;background: url(../images/shape1.png) no-repeat;display: block;left: 50%;transform: translatex(-50%);}
+
+.team-content.card h5{font: 600 22px/30px "Manrope", sans-serif;color: #0E0E0E;}
+
+.team-content.card h5 span{font: 400 16px/100% "Manrope", sans-serif;color: #525D6A;}
+
+.team-content.card p, .teamtext p, .work-with-us p{font: 400 16px/26px "Manrope", sans-serif;color: #525D6A;}
+
+.team-content.card::after, .advisor-line::after{content: "";position: absolute;width: 66.4%;height: 2px;display: block;background-color:#F5F5F5;bottom: 0;transform: translateX(-50%);left: 50%;}
+
+.audio-style{border-radius: 50px;padding-bottom: 5px;padding-top: 5px;padding-left: 5px;padding-right: 39px;}
+
+.team-content {padding: 40px 0;}
+.students-sec .owl-carousel .owl-stage{padding-left: 0 !important;}
+
+h3.leadership-text{font: 600 22px/30px "Brygada 1918", serif;color: #0E0E0E;}
+
+.advisor h3{font: 600 22px/30px "Manrope", sans-serif;color: #323539;}
+
+.advisor p{font: 400 16px/24px "Manrope", sans-serif;color: #858C95;}
+
+.our-reach h3{color: #525D6A;font: 300 36px/60px "Manrope", sans-serif;}
+
+.reach-title::after{content: "";position: absolute;bottom: -57px;width: 100%;height: 100%;background: url(../images/shape2.svg) no-repeat;display: block;left: 0;}
+
+.reach-title{font: 700 46px/60px "Brygada 1918", serif;color: #1B1B1B;}
+
+h2.work-with-us-title span{font: 700 46px/60px "Brygada 1918", serif;color: #1B1B1B;}
+
+h2.work-with-us-title span.with-us{font: 300 36px/60px "Manrope", sans-serif;color: #525D6A;}
+
+h2.work-with-us-title span.with-us::after{display: none;}
+
+h2.work-with-us-title span::after{content: "";position: absolute;bottom: -55px;width: 100%;height: 100%;background: url(../images/shape6.svg) no-repeat;display: block;left: 0px;}
+
+.work-with-us label{font: 500 14px/20px "Manrope", sans-serif;color: #323539;}
+
+.placeholder{font: 400 15px/22px "Manrope", sans-serif;color: #858C95;opacity: 1;}
+
+.work-with-us span.input-group-text {background-color: #f8f9fb;}
+
+.work-with-us .form-control, .event-signup .form-control{padding: 0.628rem .75rem;}
+
+.media-bg img{background-color: #ffffff;padding: 1rem;border-radius: 4px;}
+
+.media-bg img {width: 200px;}
+
+.media-text-content a{color: #000000;font: 700 16px/22px "Brygada 1918", serif;}
+
+.media-text-content a img{filter: brightness(0.1);}
+
+.students-sec .owl-theme .owl-nav, .instagram-feed-sec .owl-nav{max-width: 1140px;margin: auto;}
+
+.team-modal .btn-close1{margin-left: auto;}
+
+.team-modal .modal-content{padding: 80px;}
+
+.team-modal .team-content.card::after, .team-modal .advisor-line::after{display: none;}
+
+.blog-text p{overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical;} 
+
+.dataTables_wrapper .dataTables_paginate {float: inherit;text-align: inherit;padding: 1rem;display: flex;justify-content: space-between;border-top: 0;}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,.dataTables_wrapper .dataTables_paginate .paginate_button:hover {background: #fff;border-radius: 0.375rem;color: #000 !important;}
+span.d-lg-inline-block.d-block.span-block:after {
+    display: none;
+}
+.fs-07{ font-size: 0.7rem; }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {color: #939393 !important;}
+
+.college-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+.help-block.form-error {
+  font-size: 0.8rem;
+  color: #ff5050;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple, .select2-container--default .select2-selection--multiple, .select2-container--default.select2-container--focus .select2-selection--single, .select2-container--default .select2-selection--single {
+  background-color: #f8f9fb;
+  border: 1px solid #e5e5e7;
+  min-height: 38px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  display: none;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: inherit;
+  line-height: 36px;
+}
+:target {
+  scroll-margin-top: 5rem;
+}
+.blog-tab button.input-group-text {
+    border-top: 1px solid #ced4da !important;
+    border-bottom: 1px solid #ced4da !important;
+    border-left: 1px solid #ced4da !important;
+}
+.sat-single .accordion-body .card{width: 100%;}
+
+
+.banner-testimonial .banner-text p {
+  margin-bottom: 0px;
+}
+.banner-testimonial p span{
+  font: 700 1.8rem/61px "Brygada 1918", serif;
+  /* font-size: 1.5rem; */
+  font-weight: 600;
+}
+.review-no {
+    display: block;
+}
+.review-no span {
+    font-size: 14px;
+    color: #f8be00;
+}
+.google-storis-sec{
+  background-color: #F2E6E7 !important;
+  border: 2px solid #525252;
+}
+.google-revi-no {
+  background: rgb(173, 113, 122);
+  color: #fff;
+  font-size: 1rem;
+  padding: 7px 15px;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+
+.event-banner-sec .owl-theme .owl-nav{
+    margin: 0;
+   }
+.owl-prev {left: 0;}
+.owl-next {right: 0;}
+.owl-prev, .owl-next { width: 5rem;}
+.event-banner-sec .owl-nav button.owl-prev, .event-banner-sec .owl-nav button.owl-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: none;
+  border: 0;
+  opacity: 1;
+  transition: opacity 0.15s ease;
+  }
+.event-banner-sec .owl-carousel .owl-dots {
+  position: relative;
+  top: -50px;
+  }
+.eve-upcom-past h2 {
+  font: 300 36px/60px "Manrope", sans-serif;
+  color: #d4d4d4;
+}
+.eve-upcom-past h2 span {
+  font: 700 42px/60px "Brygada 1918", serif;
+    font-weight: 700;
+    color: #d4d4d4;
+}
+.eve-upcom-past .nav-pills .nav-link {
+  border: 2px solid #858C95;
+  border-radius: .357rem;
+  margin-right: 10px;
+  color: #858C95;
+  font: 700 15px/26px "Manrope", sans-serif;
+}
+.eve-upcom-past .nav-pills .nav-link.active {
+  background-color: #525252;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+.eve-upcome h4{
+   font: 600 30px/30px "Manrope", sans-serif;
+}
+.eve-upcome h6{
+   font: 300 20px/30px "Brygada 1918", serif;
+}
+.eve-upcome h4, .eve-upcome h6, .eve-upcome span, .eve-upcome p{
+   color: #fff;
+}
+
+.partner {
+  background-color: #242424;
+  padding: 15px 30px;
+  border-radius: 15px;
+}
+.partner .partner-btn{
+  background: #242424;
+  border: 2px solid #858c95;
+  border-radius: .357rem;
+  margin-right: 15px;
+  color: #858C95;
+  font: 700 15px/26px "Manrope", sans-serif;
+  padding: 0.5rem 2rem;
+}
+.partner .partner-btn.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #fff;
+  color: #ffffff;
+}
+.partner-tab h2.title1, .partner-with h2.title1{
+  font: 300 36px/60px "Manrope", sans-serif;
+  color: #525D6A;
+}
+.partner-tab h2.title1 span, .partner-with h2.title1 span{
+  font: 700 42px/60px "Brygada 1918", serif;
+  color: #000000;
+}
+.partner-tab p, .partner-with p{
+  font: 300 16px/25px "Manrope", sans-serif;
+  color: #525D6A;
+}
+
+.partner-text-right h6{font: 300 24px/30px "Brygada 1918", sans-serif;}
+.partner-banner-text-shape::after {
+  content: "";
+  position: absolute;
+  bottom: -130px;
+  width: 100%;
+  height: 100%;
+  background: url(../images/shape.svg)no-repeat;
+  display: block;
+  left: 0;
+}
+
+.tutela-partner {
+  margin-top: 0;
+}
+
+ .partner-tabs_wrapper {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ ul.partner-tabs {
+   margin: 0;
+   padding: 0;
+ }
+
+ul.partner-tabs li {
+  color: #000;
+  font: 700 22px "Brygada 1918", serif;
+  margin: 15px 0;
+  cursor: pointer;
+  padding: 25px 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 1px solid #E5E5E7;
+  position: relative;
+  list-style: none;
+  }
+
+ ul.partner-tabs li:hover{
+  background-color: #AD717A;
+  border-radius: 12px;
+  color: #fff;
+  position: relative;
+ }
+
+ ul.partner-tabs li.active{
+  background: #AD717A;
+  border-radius: 12px;
+  position: relative;
+ }
+
+ ul.choose-tabs li .choose-tab-txt{
+  font-size: 22px;
+  font-weight: normal;
+  color: #000;
+  display: block;
+}
+
+ ul.partner-tabs li span.partner-tab-txt:hover{
+  font-size: 22px;
+  color: #fff;
+ }
+
+ ul.partner-tabs li.active span.partner-tab-txt{
+  font: 700 22px "Brygada 1918", serif;
+  color: #fff;
+  top: 8px;
+ }
+ 
+ .partner-tab_container {
+   display: inline-block;
+   vertical-align: top;
+   position: relative;
+   z-index: 20;
+   left: 0;
+   width: 65%;
+   padding: 5px 25px;
+   min-height: auto !important;
+   text-align: left;
+   background: #F2E6E7;
+   border-radius: 1rem;
+   margin-top: 18px;
+ }
+ .partner-tab_container h2{
+   color: #fff;
+ }
+
+ .partner-tab_container p{
+  color: #525D6A;
+}
+.partner-tab_container a{
+  color: var(--secondary);
+}
+.partner-tab_container a:hover{
+  color: #ffffff;
+}
+.partner-tab_content {
+   padding: 20px;
+   display: none;
+ }
+ 
+.partner-tab_drawer_heading { 
+   display: none; 
+ }
+
+.partner-content {
+  height: auto;
+}
+
+.partner-arrow {
+  position: sticky;
+  width: 34px;
+  height: 34px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 99;
+  border-radius: 30px;
+  border: 3px solid #b3b3b3;
+  transform: translateX(-50%); 
+}
+.partner-arrow:hover {
+  border: 3px solid #1f73a3;
+}
+.partner-arrow i{
+  color: #b3b3b3;
+}
+.partner-arrow i:hover {
+  color: #1f73a3;
+}
+
+.partner-arrow.up {
+  top:76%;
+  left:82%;
+  
+}
+.partner-arrow.down {
+  bottom:6%;
+  left: 82%;
+}
+
+.partner-tab_drawer_heading{
+    font: 700 22px/30px "Brygada 1918", serif;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.scroll-container::-webkit-scrollbar { 
+  display: none;
+} 
+
+.w-45 {
+  width: 45%;
+}
+
+.together h2.title1{
+  font: 300 36px/60px "Manrope", sans-serif;
+  color: #525D6A;
+}
+.together h2.title1 span{
+  font: 700 42px/60px "Brygada 1918", serif;
+  color: #000000;
+}
+.together h2.title1 span::after {
+  bottom: -50px;
+}
+.together p{
+  font: 300 16px/25px "Manrope", sans-serif;
+  color: #525D6A;
+}
+
+.univer-journey-sec img{
+  width: 180px;
+}
+
+.univer-results-sec .display-1 {
+  color: #AD717A;
+  font-family: "Brygada 1918", serif;
+  font-weight: 600;
+  position: absolute;
+  top: -50px;
+}
+.univer-results-sec h4 {
+  font-family: "Brygada 1918", serif;
+  font-size: calc(1.21rem + 0.158vw);
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: 25px;
+}
+
+#score-wrapper .dataTables_filter{ padding: 1rem 0.5rem;width: 100%;background: #242424;color: #858c95;}
+#score-wrapper .dataTables_filter label{font-weight: 600;}
+#score-wrapper  .dataTables_wrapper .dataTables_filter input {color: #fff;}
+
+
+/* ---footer--- */
+
+footer ul li a {color: #d4d4d4;font: 500 16px/24px "Manrope", sans-serif;}
+
+footer h5, footer p span{color: #d4d4d4;font: 700 18px/24px "Manrope", sans-serif;margin-bottom: 15px;}
+
+footer p{font: 500 14px/24px "Manrope", sans-serif; color: #ffffff;}
+footer a:hover {color: #fff;}
+footer a {
+  color: #d4d4d4;
+}
+.content-blog-bg table{width: 100% !important;}
+
+.sat-diagnostic-test-height{
+  height: auto;
+  min-height: 70%;
+}
+.act-diagnostic-test-height{
+  height: 68.7%;
+}
+
+.not-found{
+  font-size: 8rem;
+  font-weight: 900;
+}
+.events-zoom-in {
+  transition: transform .2s; /* Animation */
+}
+
+.events-zoom-in:hover {
+  transform: scale(1.03);
+  box-shadow: 1px 2px 3px 5px #e3e3e3;
+}
+.z-100 {
+  z-index: 100;
+}
+.ratio {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.top-rank-area{
+   background-color: #363637;
+}
+.top-rank-area h3 {
+  font: 700 24px/24px "Brygada 1918", sans-serif;
+  color: #ffffff;
+  padding: 20px 0 0;
+  padding-top: 20px;
+}
+.top-rank-area h4 {
+  font: 500 16px/24px "Manrope", sans-serif;
+  color: #d4d4d4;
+}
+.top-rank-area h2 {
+  font: 200 48px/40px "Manrope", serif;
+  color: #ffffff;
+}
+
+.sat-sco-improv{
+  background: #363637;
+}
+.sat-sco-improv h2 {
+  font: 900 48px/40px "Brygada 1918", serif;
+  color: #d2d2d2;
+  margin-right: 6rem;
+}
+.sat-sco-improv h2 span {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+.sat-sco-improv h2 ::after {
+  content: "";
+  width: 94px;
+  /* height: 4px; */
+  border: 2px dashed #d2d2d2;
+  display: inline-block;
+  position: absolute;
+  top: 23px;
+  z-index: -1;
+  border-radius: 10px;
+}
+.sat-sco-improv h3 {
+  font: 900 37px/35px "Brygada 1918", serif;
+  color: #cd73ff;
+  margin-left: 1.5rem;
+  position: absolute;
+  top: 56px;
+}
+/* .sat-sco-improv h3 span {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+.sat-sco-improv h3 ::after {
+  content: "";
+  width: 100px;
+  border: 2px dashed #ffffff;
+  display: inline-block;
+  position: absolute;
+  top: 19px;
+  z-index: -1;
+  border-radius: 10px;
+} */
+
+.sat-sco-improv h1 {
+  font: 900 55px/50px "Brygada 1918", serif;
+  color: #ffffff;
+}
+
+.path-area{
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  margin-right: 9rem;
+}
+
+.path-area ::after{
+  content: "";
+  width: 100px;
+  margin-left: 1.6rem;
+  border: 2px dashed #ffffff;
+  display: inline-block;
+  position: absolute;
+  top: 17px;
+  z-index: -1;
+  border-radius: 10px;
+}
+svg {
+  fill: currentColor;
+  height: auto;
+  max-width: 378px;
+  transform-origin: center;
+  width: 140%;
+}
+.ring {
+  --inner-angle: calc((360 / var(--char-count)) * 1deg);
+  --character-width: 1;
+  position: relative;
+}
+.ring {
+    animation: spin 9s infinite linear;  
+  }
+  @keyframes spin {
+    to {
+      rotate: -360deg;
+    }
+  }
+
+  .card-box .icon img{
+    width: 2rem;
+    margin: 1.3rem 0;
+  }
+@keyframes blink-color {
+  0% { color: #99b8dd; }
+  33% { color: #627aa3; } 
+  66% { color: #c89f5a; }
+  100% { color: #d9cbb3; }
+}
+
+.blinking-text {
+  animation: blink-color 2s infinite;
+}
+/* .diagnostic-test-amount{
+    position: relative;
+    transform: translateY(102%);
+} */
+
+/* ----------Responsive---------- */
+
+@media only screen and (min-width: 1599px){
+  
+
+  .blog-bg-single header{padding: 0 220px !important;}
+
+  .timeline-container.right span{
+        top: 50%;
+        transform: translate(-50%);}
+
+  .timeline-container.left span{top: 50%; transform: translate(-50%);}
+
+  .diagnostic-price .card h3 {font: 700 28px / 44px "Manrope", sans-serif;}
+
+  .tutela-bg-dark{
+    padding-left:220px !important;
+    padding-right:220px !important;
+  } 
+  .tutela-bg-light-gray{
+    padding-left:220px !important;
+    padding-right:220px !important;
+  } 
+
+   .banner-single {margin: 0 -220px;}  
+
+   .students-sec .owl-theme .owl-nav, .instagram-feed-sec .owl-nav{
+    max-width: 1320px;
+    /* margin: 0px auto; */
+    padding-bottom: 0px;
+  }
+
+   .modal-xl {--bs-modal-width: 1320px;}
+
+   .event-banner-sec .owl-theme .owl-nav{
+    margin: 0;
+   }
+   .owl-prev {left: 0;}
+   .owl-next {right: 0;}
+   .owl-prev, .owl-next { width: 5rem;}
+   .event-banner-sec .owl-nav button.owl-prev, .event-banner-sec .owl-nav button.owl-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: none;
+    border: 0;
+    opacity: 1;
+    transition: opacity 0.15s ease;
+  }
+  .event-banner-sec .owl-carousel .owl-dots {
+  position: relative;
+  top: -60px;
+  }
+}
+
+
+
+@media only screen and (max-width: 1366.98px){
+
+  /* .blog-tab-content .col-md-4 {padding-left: 30px;padding-top: 7px;background-color: #ffffff;padding-bottom: 7px;border-radius: 0 12px 12px 0;} */
+
+  /* .blog-tab-content{background-color: transparent !important;} */
+
+  .blog-tab-content .student-description p{margin-bottom: 0;}
+
+.timeline-container.right span{right: 98.5%;;top: 50%;transform: translate(30%, 0%);}
+.timeline-container.left span{top: 55%;}
+
+.univer-results-sec h4 {
+  font: 600 1.156rem/30px "Brygada 1918", serif;
+  margin-top: 25px;
+}
+.ptb {padding-top: 6rem;padding-bottom: 6rem;}
+
+
+.diagnostic-price .card h3 {
+  font: 700 22px/44px "Manrope", sans-serif;
+  color: #323539;
+}
+
+.sat-sco-improv h2 {
+  font: 900 48px/38px "Brygada 1918", serif;
+  margin-right: 3rem;
+}
+.sat-sco-improv h2 span {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+.sat-sco-improv h2 ::after {
+  content: "";
+  width: 46px;
+  display: inline-block;
+  position: absolute;
+  top: 19px;
+}
+.sat-sco-improv h3 {
+  font: 900 28px/23px "Brygada 1918", serif;
+  margin-left: 1rem;
+  top: 41px;
+}
+.sat-sco-improv h1 {
+  font: 900 60px/48px "Brygada 1918", serif;
+}
+
+.path-area{
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  margin-right: 3rem;
+}
+.path-area ::after{
+  content: "";
+  width: 45px;
+  margin-left: 1rem;
+  top: 9px;
+}
+svg {
+  fill: currentColor;
+  height: auto;
+  max-width: 378px;
+  transform-origin: center;
+  width: 100%;
+}
+
+}
+
+
+
+@media only screen and (max-width: 991.98px){
+  
+.navbar-collapse{ position: absolute;top: 70px;left: 0; background-color: #ffffff;width: 100%;z-index: 999;padding: 20px 0; border-radius:12px;}
+.main-header .nav-link:hover{color: #000000 !important;}
+.univer, .tutela {width: 144px;}
+.sticky .navbar-collapse{left:15px;width: 90%;}
+.banner-text h1, .banner-single.sat-banner .banner-text h1 {font: 300 28px / 34px "Manrope", sans-serif;}
+/* .single-logo img {width: 60% !important;} */
+.menu-btn a.login-btn {color: #ffffff !important;background-color: #000000 !important;}
+.top-header img{filter: invert(1);}
+.main-header li.nav-item {border-bottom: 2px solid #F5F5F5;}
+.main-header .nav-link, .btn-college-kit, .menu-btn a{color: #858C95 !important;}
+span.banner-text-shape, .reach-title, .blog-banner-text h1 {font: 700 28px / 34px "Brygada 1918", serif;}
+.top-header ul li a{font: 600 12px/20px "Manrope", sans-serif;color: #181818 !important;}
+.top-header a.cart {color: #181818 !important;}
+.main-header .nav-link {padding: 18px 15px !important;}
+.banner-single .banner-text p {font: 400 12px / 20px "Manrope", sans-serif;padding: 10px 0 !important;}
+.top-header a.cart span{background: #181818 !important;color: #fff !important;}
+/* .banner-text {text-align: center !important;} */
+.banner-text-shape::after{bottom: -38px;}
+/* .student-detail-box img{height: 330px !important;} */
+h2.title1, h2.title1.book-consultation, h2.title1.title2 {font: 300 18px / 28px "Manrope", sans-serif}
+h2.title1 span, h2.title-blog span, h2.title3, h2.title3 span, h2.title4, h2.title4 span {font: 300 24px / 28px "Brygada 1918", serif;}
+h2.title4 span::after {bottom: -35px;}
+p, .score-percent h3{font: 400 12px / 16px "Manrope", sans-serif !important;}
+/* a.btn.btn-outline-secondary.course-btn {margin-bottom: 0;} */
+.score-percent h2{font: 600 44px / 30px "Brygada 1918", serif;}
+.score-percent h4 {font: 500 14px / 20px "Manrope", sans-serif;}
+.score-percent{padding: 15px !important;}
+
+.timeline-container::after{top: calc(100% - 105%);}
+.timeline-container{padding: 30px 0px}
+.timeline-container:last-child { padding-bottom: 0;}
+h2.work-with-us-title span{font:700 24px / 30px "Brygada 1918", serif;}
+h2.work-with-us-title span.with-us{font: 300 16px / 30px "Manrope", sans-serif}
+.timeline::after {left: 50%;}
+.timeline-container.left::after, .timeline-container.right::after {left: 50%;transform: translateX(-50%);}
+.timeline-container.left {
+  left: -24px;
+}
+ .timeline-container.right {
+  left: 54%;
+}
+.timeline-container.left span {transform: translate(-50%, -87%);left: 108%;}
+.timeline-container.right span{transform: translate(32%, -41%);right: 106%;}
+.timeline-container .content, .timeline-container.right .content {padding: 30px 15px 30px 15px;z-index: 1;}
+.timeline {padding: 15px;}
+.blog-sec.blog-single-content h2.title-blog{margin-bottom: 1rem !important;}
+.why-us-home-text h3{font: 700 14px / 100% "Brygada 1918", serif;}
+.tutela-connect-sec .owl-theme .owl-nav {margin-top: -24px;}
+.tutela-connect-sec .tutela-connect-images img{margin-top: 25px;}
+.tutela-connect-describe ul li{font: 400 14px / 20px "Manrope", sans-serif ;}
+.student-details-sec .student-detail-box img{height: auto !important;}
+/* .tutela-alumni-sec h2.title1 span, .students-sec h2.title1 span{display: inline-block;} */
+.title21 span::after {left: 0px !important;}
+.home-contact-sec label, .input-group .btn, .input-group select.input-group-text {font: 500 12px / 20px "Manrope", sans-serif;}
+.home-contact-sec p{margin-top: 1rem !important;}
+.home-contact-sec .nav-pills .nav-link{font: 700 12px / 14px "Manrope", sans-serif;padding: 10px 10px;}
+
+footer ul li a, .sat-single .accordion-body ul li, .accordion-body td, .sat-single .accordion-body ol li{font: 500 12px / 14px "Manrope", sans-serif;}
+footer h5{font: 700 14px / 24px "Manrope", sans-serif !important;}
+footer ul.mb-0.list-unstyled.d-flex {margin-top: 20px;}
+footer h5{margin-bottom: 3px;}
+footer p span, .diagnostic-price .card p, .table-bg table td, .table-bg table th{font: 700 12px / 24px "Manrope", sans-serif !important;}
+.table-bg table td{font: 400 12px / 24px "Manrope", sans-serif !important;}
+.border-btm {margin-top: -9px;}
+.border-btm img{width: 57%;height: 5px;}
+footer .accordion {border-bottom: 1px solid #525252;padding: 20px 0;}
+.table-bg table td, .table-bg table th{text-wrap-mode: nowrap;line-height: 22px;}
+.navbar-toggler:focus{box-shadow:inherit;}
+.instagram-feed-sec .span-block::after{display: none;}
+.sat-banner .banner-text-shape::after, .shape22::after, h2.title1 span::after, .sat-test-date h2.title1 span::after, h2.title1.small-shape-title span::after, h2.title1 span.digital-sat-exam::after, .banner-text-shape.banner-text-shape-home::after, h2.work-with-us-title span::after, .about-shape-title span::after{bottom: -6px;background-position: center}
+.banner-single.sat-banner .banner-text p{margin-bottom: 20px !important;}
+h2.title1 span.fs-2::after {
+  bottom: -18px;
+}
+.prep-text, .banner-text-right h2 {font: 300 28px / 34px "Manrope", sans-serif;text-align: center;}
+.banner-text-right{justify-content: center;margin-top: 20px;}
+.sat-banner, .about-banner, .blog-banner, .blog-banner.media-coverage-banner{padding: 25px 0;}  
+.sat-single .sidebar {background-color: transparent;padding: 0px;border-radius: 0;width: 100%;overflow-x: auto;-webkit-overflow-scrolling: touch; padding-top: 10px;}
+.sat-single .list-group-item-action{text-transform: none;display: inline-block;text-wrap-mode: nowrap;margin-left: 5px;font: 700 12px / 14px "Manrope", sans-serif;}
+.sat-single .list-group{flex-direction: inherit;}
+.accodion-head h2, .diagnostic-price h5.card-title {font: 600 15px / 20px "Brygada 1918", serif;margin-right: 30px;}
+.accodion-head {display: flex;margin-right: 10px;}
+.accordion-button[aria-expanded=true]::before, .accordion-button[aria-expanded=false]::before{font: 500 12px / 10px "Manrope", sans-serif;right: 17px;}
+.tutela-bg-dark .blog-single-content{padding: 16px 0px !important;}
+figure.table {overflow: auto;}
+.blog-single-content{padding: 24px 16px !important;}
+.blog-single-content h3, .blog-single-content h4{font: 500 18px / 30px "Manrope", sans-serif;}
+.accordion-button[aria-expanded=true]::after{width: 12px;}
+.accordion-button::after{right: -3px;}
+footer .border-btm img{width: 100%;height: auto;}
+.accordion-button[aria-expanded=false]::after{right: -4px;}
+.sat-single .accordion-body ul li, .accordion-body ol li{margin-bottom: 10px;}
+.sat-single .accordion-body h5.card-title{font: 700 14px / 20px "Manrope", sans-serif;}
+.sat-scores-sat-single .student-detail-box img{height: auto !important;}
+.sat-single .testimonial-box p, .testimonial-box p span{font: 400 10px / 12px "Manrope", sans-serif;}
+.tutela-bg-dark, .tutela-bg-light-gray{padding-right: 0rem !important;padding-left: 0rem !important;}
+.tutela-bg-dark header{padding: 0 10px;margin-top: 10px;} 
+.sat-scores-sat-single .owl-nav button.owl-next, .sat-scores-sat-single .owl-nav button.owl-prev {bottom: -30px;}
+.diagnostic-price .card{margin-bottom: 15px;}
+/* .sat-test-date, .tutela-bg-dark .faq-sec{padding: .5rem !important;} */
+.tutela-bg-dark .sat-test-date, .tutela-bg-dark .faq-sec, section.students-sec, .about-page-sec, .team-single-sec, .impact-details-sec, .student-details-sec, .tutela-alumni-sec, .google-storis-sec, section.eve-upcom-past {margin-right: 10px;margin-left: 10px;}
+.single-page-section.sat-single{padding-top: 1.5rem !important;padding-bottom: 1.5rem !important;}
+.sat-test-date td, .sat-test-date th {padding: .51rem;}
+.sat-single .tutela-connect-describe ul li{margin-bottom: 5px;}
+.faq-sec h2.title1 span{display: inline-block;}
+.faq-sec h2.title1{font: 300 28px / 30px "Manrope", sans-serif;}
+.faq-sec .accordion-button{ margin-top: 20px;}
+.faq-sec .accodion-head{margin-bottom: 0 !important;}
+footer .accordion-button[aria-expanded=true]::before, footer .accordion-button[aria-expanded=false]::before{
+display: none;}
+footer .accordion-button:not(.collapsed)::after{background-image: var(--bs-accordion-btn-icon) !important; position: inherit;right: -18px;width: var(--bs-accordion-btn-icon-width);filter: invert(1);background-color: inherit;box-shadow: inherit;}
+footer .accordion-button[aria-expanded=false]::after{background-image: var(--bs-accordion-btn-icon) !important;position: inherit;background-color: inherit;box-shadow: inherit;filter: invert(1);}
+footer .accordion-button {padding: 0px 0 0px 0px; margin: 0; border: 0; width: 90% !important; text-align: center; border-radius: inherit;height: inherit;background-color: inherit !important;box-shadow: none !important;}
+.diagnostic-price .card h3 {font: 700 18px / 28px "Manrope", sans-serif;}
+footer .accordion-body{padding: 0;}
+.about-banner-text {text-align: center !important;}
+.team-shape h2.title1 span::after{ bottom: -27px;}
+.team-single-sec img{width: 100%;}
+.team-single-sec .card-body .d-flex.mb-4{margin-bottom: .5rem !important;}
+.our-reach h3 {font: 300 16px / 30px "Manrope", sans-serif;}
+.banner-text-shape.banner-text-shape-blog::after{bottom: -36px;}
+.reach-title::after{bottom: -32px;}
+.advisor h3 {font: 600 16px / 30px "Manrope", sans-serif;}
+.student-details-sec .nav-tabs{flex-wrap: nowrap;margin-bottom: 10px;overflow: auto;}
+.dataTables_wrapper .dataTables_paginate .paginate_button{padding: .2em .7em;font-size: 12px;min-width: 1em;border-radius: 0;font-size: 12px;}
+table.dataTable tbody th, table.dataTable tbody td{font-size: 12px;}
+.tutela-alumni-sec h2.title {font: 300 28px / 34px "Manrope", sans-serif;}
+.tutela-alumni-sec h3{font: 300 16px / 30px "Manrope", sans-serif;}
+.tutela-alumni-sec .start-journey-btn{margin-bottom: 20px;}
+.blog-tab .nav-tabs{flex-wrap: nowrap;overflow: auto;margin-bottom: 15px;}
+.blog-tab  .nav-tabs .nav-link{font: 700 12px / 12px "Manrope", sans-serif;padding: 6px 10px;text-wrap-mode: nowrap;}
+.blog-description img{
+	height: 144px;
+}
+.article-text h3, .blog-text h3{font: 700 16px / 26px "Brygada 1918", serif;padding: 10px 0;}
+.blog-description .d-flex.mt-5{margin-top: 1rem !important;}
+.article-text {padding: 0.2rem 1rem !important;padding-left: 15px !important;}
+.blog-tab-content .col-md-4 {padding-left: 10px;border-radius: 0 0px 12px 12px;}
+.sidebar img {display: none;}
+/* .blog-tab-content img {border-radius: 12px 12px 0px 0px;} */
+.blog-single-banner{height: auto;}
+.blog-banner-text{padding: 25px 0;}
+.blog-single-content h2 {font: 500 16px / 30px "Manrope", sans-serif;margin-bottom: 0;}
+.blog-single-content img.mb-5{margin-bottom: 1rem !important;}
+.blog-single-banner.terms-sec{height: auto;}
+.blog-single-content ul li{font: 400 12px / 20px "Manrope", sans-serif; color: #858C95;}
+.blog-single-content .blog-heading-content{margin: 15px 0;}
+.tutela-connect-images {margin-top: 25px;}
+.team-modal .modal-content {padding: 0;}
+.accordion-bg-sat .tutela-connect-images {margin-top: 60px;}
+.media-view-more{padding: 6px 20px !important;font: 600 12px / 12px "Manrope", sans-serif;}
+.home-contact-sec h6 {font: 500 12px / 22px "Manrope", sans-serif;}
+.home-contact-sec .nav-pills{flex-wrap: nowrap;}
+.home-contact-sec .start-journey-btn{width: 60% !important;}
+.faq-sec h2{font: 300 12px /20px "Manrope", sans-serif;}
+.faq-sec .accordion-body p{font: 300 12px /22px "Manrope", sans-serif;}
+.sm-newline {width: fit-content;margin-bottom: 1rem;}
+.owl-theme .owl-dots .owl-dot span{width: 5px;height: 5px;}
+.owl-dots .owl-dot.active span{width: 20px;height: 5px;}
+.accordion-bg-sat{padding: 10px 0;;margin-bottom: 16px !important;}
+.sat-single .accodion-head h2{margin-right:40px;}
+.sat-single .accordion-body{margin-top: 0.7rem;padding-top: 15px;}
+.sat-test-date td, .sat-test-date th, .sat-single .accordion-body td, .sat-single .accordion-body th{padding: 1rem;}
+.sat-scores-sat-single {padding-right: 16px !important;padding-left: 16px !important;margin-bottom: 0;}
+.diagnostic-price h2.title1 {padding: 32px 0 32px;}
+section.sat-test-date {border: 0 !important;background-color: transparent;padding: 0 !important;margin: 0 !important;}
+section.sat-test-date  h2.title1{text-align: center;}
+section.faq-sec {margin-top: 1rem !important;margin-bottom: 1rem !important;}
+.faq-sec .accordion-bg-sat {padding: 0px 0;margin-bottom: 0px !important;}
+.faq-sec h2.title1{margin-bottom: 1rem !important;}
+section.students-sec {padding-left: 0rem !important;padding-right: 0rem !important;}
+.title-text{margin: 24px 0 !important;}
+.home-contact-sec .overlay.sec-padding{padding:0px;}
+.home-contact-sec{margin-top: 1rem !important;margin-left: 10px;margin-right: 10px;}
+footer{margin-left: 10px;margin-right: 10px;}
+.faq-sec, .students-sec, .home-contact-sec .overlay.sec-padding, .about-page-sec, .team-single-sec{padding: 24px 0;}
+.sat-single .accordion-body .card {width: 100%;} 
+.about-3{padding-left: 1rem;padding-right: 1rem;}
+ .home-contact-sec {background: url(../images/home-contact-bg-mobile.jpg) no-repeat center;background-size: auto;background-size: cover;}
+li ul {margin: 0.6rem;margin-bottom: 0.6rem;}
+.accordion-button{margin-bottom: 0;}
+.home-contact-sec h2.title1 b {font: 700 25px / 60px "Brygada 1918", serif;}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{background-color: #ffffff;width: 24px;height: 8px;}
+.owl-theme .owl-dots .owl-dot span{background-color: #858C95;margin: 5px 3px;}
+.tutela-connect-bg .owl-theme .owl-dots .owl-dot.active span, .tutela-connect-bg .owl-theme .owl-dots .owl-dot:hover span{background-color: #D4D4D4;}
+/* .col-lg-5.col-sm-12.border-start.border-secondary.ps-lg-5 {border-left: 0 !important;border-top: 1px solid #525252;} */
+
+   .event-banner-sec .owl-theme .owl-nav{
+    margin: 0;
+   }
+   .owl-prev {left: 0;}
+   .owl-next {right: 0;}
+   .owl-prev, .owl-next { width: 5rem;}
+   .students-sec .owl-theme .owl-nav, .instagram-feed-sec .owl-nav {
+  max-width: 1140px;
+  margin: 10px auto 0 auto;
+  /* display: list-item; */
+}
+   .event-banner-sec .owl-nav button.owl-prev, .event-banner-sec .owl-nav button.owl-next {
+    position: absolute;
+    top: -25px;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: none;
+    border: 0;
+    opacity: 1;
+    transition: opacity 0.15s ease;
+  }
+   .event-banner-sec .owl-carousel .owl-nav {
+    display: block;
+  }
+    .owl-theme .owl-nav.disabled + .owl-dots {
+    position: relative;
+    top: -5px;
+    margin-top: 0;
+  }
+
+  span.banner-text-shape, span.partner-banner-text-shape {
+    font: 700 28px/38px "Brygada 1918", serif;
+  }
+  
+.partner-text-right{
+  text-align: center;
+}
+.partner-banner-text-shape::after {
+  content: "";
+  position: absolute;
+  bottom: -69px;
+  width: 100%;
+  height: 100%;
+  background: url(../images/shape.svg)no-repeat;
+  display: block;
+  left: 0;
+}
+  ul.partner-tabs {
+    display: none;
+  }
+  .partner-tab_container {
+    display: block;
+    margin: 5px auto;
+    padding: 0;
+    width: 100%;
+    background: transparent;
+  }
+  .partner-tab_content {
+     background: #F2E6E7;
+     border-radius: 10px;
+     margin-bottom: 10px;
+  }
+  .partner-tab_drawer_heading {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #E5E5E7;
+    font: 700 15px/30px "Brygada 1918", serif;
+    color: #556262;
+    margin: 0 0 10px 0;
+    padding: 12px 20px;
+    display: block;
+    cursor: pointer;
+  }
+  .partner-tab_container h3 {
+  font: 700 15px/30px "Brygada 1918", serif;
+}
+  .partner-tab_drawer_heading:hover {
+   background: #AD717A;
+   color: #ffffff;
+ }
+  .d_active {
+    background: #AD717A;
+    color: #ffffff;
+  }
+.partner-tab h2.title1, .partner-with h2.title1, .together h2.title1{
+    font: 300 18px/28px "Manrope", sans-serif;
+    color: #525D6A;
+}
+.partner-tab h2.title1 span, .partner-with h2.title1 span, .together h2.title1 span{
+    font: 300 24px/28px "Brygada 1918", sans-serif;
+    color: #525D6A;
+}
+.partner-tab h2.title1 span::after, .partner-with h2.title1 span::after, .together h2.title1 span::after {
+  bottom: -15px;
+}
+.ptb{padding-top: 4.5rem;padding-bottom: 4.5rem;}
+
+ .univer-results-sec h4 {
+    font: 600 1.233rem/30px "Brygada 1918", serif;
+    margin-top: 25px;
+  }
+.univer-results-sec .display-1 {
+  top: -39px;
+}
+
+.video-sec-padding{padding: 20px;}
+
+/* .diagnostic-test-amount{
+    position: relative;
+    transform: translateY(147%);
+} */
+
+.sat-diagnostic-test-height {
+  height: auto;
+  min-height: 73%;
+}
+.act-diagnostic-test-height{
+  height: auto;
+  min-height: 71.7%;
+}
+
+.top-rank-area h3 {
+  font: 700 22px/24px "Brygada 1918", sans-serif;
+}
+.top-rank-area h2, .sat-sco-improv h2 {
+  font: 200 40px/40px "Manrope", serif;
+}
+
+.sat-sco-improv h2 {
+  font: 900 24px/20px "Brygada 1918", serif;
+  margin-right: 3rem;
+}
+.sat-sco-improv h2 span {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+.sat-sco-improv h2 ::after {
+  content: "";
+  width: 46px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+}
+.sat-sco-improv h3 {
+  font: 900 21px/20px "Brygada 1918", serif;
+  margin-left: 1rem;
+  top: 35px;
+}
+.sat-sco-improv h1 {
+  font: 900 28px/25px "Brygada 1918", serif;
+}
+
+.path-area{
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  margin-right: 3rem;
+}
+.path-area ::after{
+  content: "";
+  width: 45px;
+  margin-left: 1rem;
+  top: 8px;
+}
+svg {
+  fill: currentColor;
+  height: auto;
+  max-width: 378px;
+  transform-origin: center;
+  width: 100%;
+}
+
+}
+
+.float{position:fixed;width:60px;height:60px;bottom:40px;right:40px;background:radial-gradient(ellipse at center, #00a859 7%,#007a47 86%);color:#FFF;border-radius:50px;text-align:center;z-index:100;}
+
+.wa-float{margin-top:14px;}
+
+
+@media only screen and (max-width: 767.98px){
+.blog-description img{
+	height: 238px;
+}
+.navbar-collapse{ position: absolute;top: 70px;left: 0; background-color: #ffffff;width: 100%;z-index: 999;padding: 20px 0; border-radius:12px;}
+.univer, .tutela{width:88px}
+.sticky .navbar-collapse{left:15px;width: 90%;}
+.banner-text h1, .banner-single.sat-banner .banner-text h1 {font: 300 20px / 34px "Manrope", sans-serif;text-align: center;}
+/* .single-logo img {width: 60% !important;} */
+.menu-btn a.login-btn {color: #ffffff !important;background-color: #000000 !important;}
+.top-header img{filter: invert(1);}
+.main-header li.nav-item {border-bottom: 2px solid #F5F5F5;}
+.main-header .nav-link, .btn-college-kit, .menu-btn a{color: #858C95 !important;}
+span.banner-text-shape, .reach-title, .blog-banner-text h1, .sat-banner span.banner-text-shape {font: 700 28px / 34px "Brygada 1918", serif;}
+.top-header ul li a{font: 600 12px/20px "Manrope", sans-serif;color: #181818 !important;}
+.top-header a.cart {color: #181818 !important;}
+.main-header .nav-link {padding: 18px 15px !important;}
+.banner-single .banner-text p {font: 400 12px / 20px "Manrope", sans-serif;text-align: center;padding: 10px 0 !important;}
+.top-header a.cart span{background: #181818 !important;color: #fff !important;}
+.banner-text {text-align: center !important;}
+.banner-text-shape::after, .partner-banner-text-shape::after{bottom: -38px;}
+/* .student-detail-box img{height: 330px !important;} */
+h2.title1, h2.title1.book-consultation, h2.title1.title2 {font: 300 16px / 28px "Manrope", sans-serif}
+h2.title1 span, h2.title3, h2.title3 span, h2.title4, h2.title4 span {font: 300 24px / 28px "Brygada 1918", serif;}
+p, .score-percent h3{font: 400 14px / 20px "Manrope", sans-serif !important;}
+/* a.btn.btn-outline-secondary.course-btn {margin-bottom: 0;} */
+.score-percent h2{font: 600 34px / 30px "Brygada 1918", serif;}
+.score-percent h4 {font: 500 14px / 20px "Manrope", sans-serif;}
+.score-percent{padding: 15px !important;}
+/* .timeline-container::after{top: calc(100% - 105%);}
+.timeline-container{padding: 30px 0px}
+.timeline::after {left: 50%;}
+.timeline-container.left::after, 
+.timeline-container.right::after {left: 45%;}
+.timeline-container.left span {transform: translate(-50%, -15%);top: 0%;left: 50%;}
+.timeline-container.right span{top: -7%;right: 50%;transform: translate(50%, 50%);}
+.timeline-container .content {padding: 30px 15px 30px 15px;z-index: 1;}
+.timeline {padding: 15px;} */
+.why-us-home-text h3{font: 700 14px / 100% "Brygada 1918", serif;}
+.tutela-connect-sec .owl-theme .owl-nav {margin-top: -24px;}
+.tutela-connect-sec .tutela-connect-images img{margin-top: 25px;}
+.tutela-connect-describe ul li{font: 400 14px / 20px "Manrope", sans-serif ;}
+.student-details-sec .student-detail-box img{height: auto !important;}
+/* .tutela-alumni-sec h2.title1 span, .students-sec h2.title1 span{display: inline-block;} */
+.title21 span::after {left: 0px !important;}
+.home-contact-sec label, .input-group .btn, .input-group select.input-group-text {font: 500 12px / 20px "Manrope", sans-serif;}
+.home-contact-sec p{margin-top: 1rem !important;}
+.home-contact-sec .nav-pills .nav-link{font: 700 12px / 14px "Manrope", sans-serif;padding: 10px 10px;}
+.book-free-sec .nav-pills .nav-link {font: 700 11px / 14px "Manrope", sans-serif;padding: 10px 10px;}
+
+footer ul li a, .sat-single .accordion-body ul li, .accordion-body td, .sat-single .accordion-body ol li{font: 500 14px / 20px "Manrope", sans-serif;}
+footer h5{font: 700 14px / 24px "Manrope", sans-serif !important;}
+footer h5{margin-bottom: 3px;}
+footer p span, .diagnostic-price .card p, .table-bg table td, .table-bg table th{font: 700 14px / 20px "Manrope", sans-serif !important;}
+.table-bg table td, .table-bg table th{text-wrap-mode: nowrap;line-height: 22px;}
+.navbar-toggler:focus{box-shadow:inherit;}
+.instagram-feed-sec .span-block::after{display: none;}
+
+.banner-single.sat-banner .banner-text p, 
+.banner-single.ibmyp-banner .banner-text p, 
+.banner-single.act-banner .banner-text p, 
+.banner-single.esat-banner .banner-text p{
+  margin-bottom: 20px !important;
+}
+
+.prep-text, .banner-text-right h2 {font: 300 28px / 34px "Manrope", sans-serif;text-align: center;}
+.banner-text-right{justify-content: center;margin-top: 20px;}
+.sat-banner, .about-banner, .blog-banner, .blog-banner.media-coverage-banner{padding: 25px 0;}  
+.sat-single .sidebar {background-color: transparent;padding: 0px;border-radius: 0;width: 100%;overflow-x: auto;-webkit-overflow-scrolling: touch; padding-top: 10px;}
+.sat-single .list-group-item-action{text-transform: none;display: inline-block;text-wrap-mode: nowrap;margin-left: 5px;font: 700 12px / 14px "Manrope", sans-serif;}
+.sat-single .list-group{flex-direction: inherit;}
+.accodion-head h2, .diagnostic-price h5.card-title {font: 600 15px / 20px "Brygada 1918", serif;margin-right: 30px;}
+.accodion-head {display: flex;margin-right: 10px;}
+.accordion-button[aria-expanded=true]::before, .accordion-button[aria-expanded=false]::before{font: 500 12px / 10px "Manrope", sans-serif;right: 17px;}
+.accordion-button[aria-expanded=true]::after{width: 12px;}
+.accordion-button::after{right: -4px;}
+.accordion-button[aria-expanded=false]::after{right: -4px;}
+.sat-single .accordion-body ul li, .accordion-body ol li{margin-bottom: 10px;}
+.sat-single .accordion-body h5.card-title{font: 700 14px / 20px "Manrope", sans-serif;}
+.sat-scores-sat-single .student-detail-box img{height: auto !important;}
+.sat-single .testimonial-box p, .testimonial-box p span{font: 400 10px / 12px "Manrope", sans-serif;}
+.tutela-bg-dark, .tutela-bg-light-gray{padding-right: 0rem !important;padding-left: 0rem !important;}
+.tutela-bg-dark header{padding: 0 10px;margin-top: 10px;} 
+.sat-scores-sat-single .owl-nav button.owl-next, .sat-scores-sat-single .owl-nav button.owl-prev {bottom: -30px;}
+.diagnostic-price .card{margin-bottom: 15px;}
+/* .sat-test-date, .tutela-bg-dark .faq-sec{padding: .5rem !important;} */
+/* .tutela-bg-dark .sat-test-date, .tutela-bg-dark .faq-sec{margin: 0 10px;} */
+.single-page-section.sat-single{padding-top: 1.5rem !important;padding-bottom: 1.5rem !important;}
+.sat-test-date td, .sat-test-date th {padding: .51rem;}
+.sat-single .tutela-connect-describe ul li{margin-bottom: 5px;}
+.faq-sec h2.title1 span{display: inline-block;}
+.faq-sec h2.title1{font: 300 28px / 30px "Manrope", sans-serif;}
+.faq-sec .accordion-button{ margin-top: 20px;}
+.faq-sec .accodion-head{margin-bottom: 0 !important;}
+footer .accordion-button[aria-expanded=true]::before, footer .accordion-button[aria-expanded=false]::before{
+display: none;}
+footer .accordion-button:not(.collapsed)::after{background-image: var(--bs-accordion-btn-icon) !important; position: inherit;right: -18px;width: var(--bs-accordion-btn-icon-width);filter: invert(1);background-color: inherit;box-shadow: inherit;}
+footer .accordion-button[aria-expanded=false]::after{background-image: var(--bs-accordion-btn-icon) !important;position: inherit;background-color: inherit;box-shadow: inherit;filter: invert(1);}
+footer .accordion-button {padding: 0px 0 0px 0px; margin: 0; border: 0; width: 90% !important; text-align: center; border-radius: inherit;height: inherit;background-color: inherit !important;box-shadow: none !important;}
+footer .accordion-body{padding: 0;}
+.about-banner-text {text-align: center !important;}
+.team-shape h2.title1 span::after{ bottom: -27px;}
+.team-single-sec img{width: 100%;}
+.team-single-sec .card-body .d-flex.mb-4{margin-bottom: .5rem !important;}
+.our-reach h3 {font: 300 16px / 30px "Manrope", sans-serif;}
+.banner-text-shape.banner-text-shape-blog::after{bottom: -36px;}
+.banner-text-shape::after, .partner-banner-text-shape::after {bottom: -40px;}
+.reach-title::after{bottom: -32px;}
+.advisor h3 {font: 600 16px / 30px "Manrope", sans-serif;}
+.student-details-sec .nav-tabs{flex-wrap: nowrap;margin-bottom: 10px;overflow: auto;}
+.dataTables_wrapper .dataTables_paginate .paginate_button{padding: .2em .2em;font-size: 12px;min-width: 1em;border-radius: 0;font-size: 12px;}
+table.dataTable tbody th, table.dataTable tbody td{font-size: 12px;}
+.tutela-alumni-sec h2.title {font: 300 28px / 34px "Manrope", sans-serif;}
+.tutela-alumni-sec h3{font: 300 16px / 30px "Manrope", sans-serif;}
+.tutela-alumni-sec .start-journey-btn{margin-bottom: 20px;}
+.blog-tab .nav-tabs{flex-wrap: nowrap;overflow: auto;margin-bottom: 15px;}
+.blog-tab  .nav-tabs .nav-link{font: 700 12px / 12px "Manrope", sans-serif;padding: 6px 10px;text-wrap-mode: nowrap;}
+.article-text h3, .blog-text h3{font: 700 16px / 26px "Brygada 1918", serif;padding: 10px 0;}
+.blog-description .d-flex.mt-5{margin-top: 1rem !important;}
+.article-text {padding: .5rem !important;}
+.blog-tab-content .col-md-4 {padding-left: 10px;border-radius: 0 0px 12px 12px;}
+.blog-tab-content img {border-radius: 12px 12px 0px 0px;}
+.blog-single-banner{height: auto;}
+.blog-banner-text{padding: 25px 0;}
+.blog-single-content h2 {font: 500 16px / 30px "Manrope", sans-serif;margin-bottom: 0;}
+.blog-sec.blog-single-content h2.title-blog{margin-bottom: 1rem !important;}
+.blog-single-content img.mb-5{margin-bottom: 1rem !important;}
+.blog-single-banner.terms-sec{height: auto;}
+.blog-single-content ul li{font: 400 12px / 20px "Manrope", sans-serif; color: #858C95;}
+.blog-single-content .blog-heading-content{margin: 15px 0;}
+.tutela-connect-images {margin-top: 25px;}
+.team-modal .modal-content {padding: 0;}
+.accordion-bg-sat .tutela-connect-images {margin-top: 60px;}
+.media-view-more{padding: 6px 20px !important;font: 600 12px / 12px "Manrope", sans-serif;}
+.home-contact-sec h6 {font: 500 12px / 22px "Manrope", sans-serif;}
+.home-contact-sec .nav-pills{flex-wrap: nowrap;}
+.faq-sec h2{font: 300 16px /23px "Manrope", sans-serif;}
+.faq-sec .accordion-body p{font: 300 12px /22px "Manrope", sans-serif;}
+.sm-newline {display: inline-block;width: fit-content;margin-bottom: 1rem;}
+footer .col-md-5.border-start.border-secondary{border: 0 !important;}
+/* .timeline-container .content, .timeline-container.right .content{margin: 0 100px;} */
+.sec-mb{margin-bottom: 1rem !important;}
+.sec-py{padding-top: 1rem;padding-bottom: 1rem;}
+.banner {height: 300px;}
+.sat-banner .banner-text-shape::after, .shape22::after, h2.title1 span::after, .sat-test-date h2.title1 span::after, h2.title1.small-shape-title span::after, h2.title1 span.digital-sat-exam::after, .banner-text-shape.banner-text-shape-home::after, h2.work-with-us-title span::after, .about-shape-title span::after{bottom: -6px;}
+.logo-single-page-bg {padding: 0.5rem;}
+h2.title1 span.fs-2::after {
+  bottom: -18px;
+}
+
+.eve-upcom-past h2 {
+  font: 300 18px/28px "Manrope", sans-serif;
+  text-align: center;
+}
+.eve-upcom-past h2 span {
+  font: 300 24px/28px "Brygada 1918", serif;
+}
+.eve-upcome h4 {
+  font: 300 20px/30px "Manrope", sans-serif;
+}
+.eve-upcome h6 {
+  font: 300 15px/30px "Brygada 1918", serif;
+}
+table.dataTable thead th, table.dataTable thead td {
+  padding: 15px;
+}
+.univer-results-sec .display-1 {
+  font-size: calc(2rem + 5vw);
+  top: -32px;
+}
+.univer-results-sec h4 {
+  font: 600 1.22rem/30px "Brygada 1918", serif;
+  margin-top: 15px;
+}
+.sat-sco-improv h2 {
+  font: 900 22px/20px "Brygada 1918", serif;
+  margin-right: 3rem;
+}
+.sat-sco-improv h2 span {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+.sat-sco-improv h2 ::after {
+  content: "";
+  width: 50px;
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+}
+.sat-sco-improv h3 {
+  font: 900 23px/35px "Brygada 1918", serif;
+  margin-left: 1.5rem;
+  top: 32px;
+}
+.sat-sco-improv h1 {
+  font: 900 31px/28px "Brygada 1918", serif;
+}
+
+.path-area{
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  margin-right: 4rem;
+}
+.path-area ::after{
+  content: "";
+  width: 50px;
+  margin-left: 1.3rem;
+  top: 17px;
+}
+svg {
+  fill: currentColor;
+  height: auto;
+  max-width: 378px;
+  transform-origin: center;
+  width: 100%;
+}
+
+}
+
+
+@media only screen and (max-width: 575.98px){
+  h2.title4 span::after {
+  bottom: -55px;
+  width: 250%;
+  left: -117px;
+}
+.border-start{
+  border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  border-left: none !important;
+}
+.end-0 {
+  right: -3% !important;
+}
+.top-0 {
+  top: -3% !important;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: url(../images/line.png)repeat-y;
+  top: 39px;
+  bottom: 100px;
+  left: 50%;
+  margin-left: -1px;
+}
+.timeline-container.left, .timeline-container.right {
+  left: 0%;
+}
+.timeline-container.left span {
+  transform: translate(-50%, -83%);
+  left: 50%;
+  top: 7%;
+}
+.timeline-container.right span {
+  transform: translate(-50%, -84%);
+  left: 50%;
+  top: 7%;
+}
+.media-view-more {
+    padding: 6px 8px !important;
+}
+.tab-bg {
+  padding: 15px 0px;
+}
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0em .39em;
+    font-size: 11px;
+  }
+
+/* .diagnostic-test-amount{
+    position: relative;
+    transform: translateY(0%);
+} */
+.sat-diagnostic-test-height, .act-diagnostic-test-height{
+ height: auto;
+ min-height: 10%;
+}
+
+.sat-sco-improv h2 {
+  font: 900 22px/20px "Brygada 1918", serif;
+  margin-right: 3rem;
+}
+.sat-sco-improv h2 span {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+.sat-sco-improv h2 ::after {
+  content: "";
+  width: 50px;
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+}
+.sat-sco-improv h3 {
+  font: 900 23px/35px "Brygada 1918", serif;
+   margin-left: 1.5rem;
+   top: 33px;
+}
+.sat-sco-improv h1 {
+  font: 900 31px/28px "Brygada 1918", serif;
+}
+
+.path-area{
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  margin-right: 4rem;
+}
+.path-area ::after{
+  content: "";
+  width: 50px;
+  margin-left: 1.3rem;
+  top: 17px;
+}
+svg {
+  fill: currentColor;
+  height: auto;
+  max-width: 378px;
+  transform-origin: center;
+  width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 480.98px){
+
+.sat-sco-improv h2 {
+  font: 900 18px/40px "Brygada 1918", serif;
+  margin-right: 3rem;
+}
+.sat-sco-improv h2 span {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+.sat-sco-improv h2 ::after {
+  content: "";
+  width: 50px;
+  display: inline-block;
+  position: absolute;
+  top: 19px;
+}
+.sat-sco-improv h3 {
+  font: 900 21px/35px "Brygada 1918", serif;
+  margin-left: 1.5rem;
+  top: 32px;
+}
+.sat-sco-improv h1 {
+  font: 900 25px/28px "Brygada 1918", serif;
+}
+
+.path-area{
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  margin-right: 4rem;
+}
+.path-area ::after{
+  content: "";
+  width: 50px;
+  margin-left: 1.3rem;
+  top: 17px;
+}
+svg {
+  fill: currentColor;
+  height: auto;
+  max-width: 378px;
+  transform-origin: center;
+  width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 360px){
+
+.sat-sco-improv h2 {
+  font: 900 18px/40px "Brygada 1918", serif;
+  margin-right: 3rem;
+}
+.sat-sco-improv h2 span {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+.sat-sco-improv h2 ::after {
+  content: "";
+  width: 50px;
+  display: inline-block;
+  position: absolute;
+  top: 19px;
+}
+.sat-sco-improv h3 {
+  font: 900 18px/35px "Brygada 1918", serif;
+  margin-left: .9rem;
+  top: 22px;
+}
+.sat-sco-improv h1 {
+  font: 900 25px/28px "Brygada 1918", serif;
+}
+
+.path-area{
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  margin-right: 4rem;
+}
+.path-area ::after{
+  content: "";
+  width: 50px;
+  margin-left: 1.3rem;
+  top: 17px;
+}
+svg {
+  fill: currentColor;
+  height: auto;
+  max-width: 378px;
+  transform-origin: center;
+  width: 100%;
+}
+}
+/* Move the red line a bit lower */
+body.page-partner-counsellors .together h2.title1 span.fw-bold.position-relative::after {
+    bottom: -20px !important; 
+}
+
+/* If the paragraph still gets covered, nudge it up */
+body.page-partner-counsellors .together .col-md-6:first-child p:first-of-type {
+    margin-top: -5px !important;   
+}
