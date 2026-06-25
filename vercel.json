@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build && cp -r assets dist/assets",
+  "buildCommand": "npm run build && rsync -a assets/ dist/assets/",
   "outputDirectory": "dist",
   "installCommand": "npm install"
 }
