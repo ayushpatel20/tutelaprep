@@ -2748,32 +2748,44 @@ footer .accordion-body {
   color: #374151 !important;
 }
 
-/* Social icons circular border with hover transitions */
+/* Social icons circular background on anchor wrappers for perfect rendering */
 footer ul.list-style-none.d-flex li,
 footer ul.d-flex li {
   margin-right: 8px !important;
+  list-style: none !important;
 }
-footer ul.d-flex li a img,
-footer ul.list-style-none.d-flex li a img {
+footer ul.d-flex li a,
+footer ul.list-style-none.d-flex li a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
   background-color: #166534 !important;
   border: 1px solid rgba(22, 101, 52, 0.15) !important;
   border-radius: 50% !important;
-  padding: 10px !important;
-  width: 42px !important;
-  height: 42px !important;
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: center;
-  filter: brightness(0) invert(1) !important; /* Force white icon */
-  box-shadow: 0 4px 10px rgba(22, 101, 52, 0.15) !important;
+  box-shadow: 0 4px 10px rgba(22, 101, 52, 0.12) !important;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  text-decoration: none !important;
 }
-footer ul.d-flex li a:hover img,
-footer ul.list-style-none.d-flex li a:hover img {
+footer ul.d-flex li a:hover,
+footer ul.list-style-none.d-flex li a:hover {
   background-color: #10B981 !important;
   border-color: #10B981 !important;
   box-shadow: 0 0 15px rgba(16, 185, 129, 0.45) !important;
-  transform: scale(1.05) !important;
+  transform: translateY(-2px) scale(1.05) !important;
+}
+footer ul.d-flex li a img,
+footer ul.list-style-none.d-flex li a img {
+  width: 18px !important;
+  height: 18px !important;
+  object-fit: contain !important;
+  filter: brightness(0) invert(1) !important; /* Force white icon */
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
 }
 
 /* Copyright footer bar */
