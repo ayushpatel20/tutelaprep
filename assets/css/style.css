@@ -2799,34 +2799,90 @@ footer a:hover {
 }
 
 /* ==========================================================================
-   TUTELA PREP - TEXT READABILITY & CONTRAST CASCADES (WCAG AA COMPLIANT)
+   TUTELA PREP - SYSTEMATIC CONTRAST AUDIT & OVERRIDES (WCAG AA COMPLIANT)
    ========================================================================== */
 
-/* 1. Global text-white override (makes text-white dark slate by default on light backgrounds) */
-.text-white {
-  color: #1F2937 !important;
+/* 1. Force all headings and titles on light backgrounds to be dark slate/green */
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6,
+.title, .title1, .title2, .title3, .title4,
+.card-title, .accordion-header, .accordion-button,
+h2.title1, h2.title1 span, .banner-text h1,
+.leadership-text {
+  color: #111827 !important; /* Dark Slate heading default */
 }
 
-/* 2. Restore white text specifically inside dark sections/overlays/banners */
-.tutela-alumni-sec .text-white,
-.why-us-home-sec .text-white,
-.student-details-sec .text-white,
-.students-sec .text-white,
-.media-section .text-white,
-.tutela-connect-sec .text-white,
-.home-contact-sec .text-white,
-.team-single-sec .text-white,
-.banner .text-white,
-.blog-banner .text-white,
-.sat-diagnostic .text-white,
-.act-diagnostic .text-white,
-.modus-sec .text-white,
-.together .text-white,
-.testimonial-box .text-white,
-.testimonial-box p, 
-.testimonial-box p span,
-.timeline-container span,
-.back-to-top-btn img,
+/* 2. Force all body texts and paragraphs on light backgrounds to be dark gray */
+p, li, td, th, label, .card p, .card-text, .why-us-home-text p, 
+.timeline-container .content p, .teamtext p, .work-with-us p, 
+.advisor p, .event-description p, .table-chart td, 
+.table-chart ul li, .table-chart ul.first-list li, 
+.table-chart ul.second-list li, .table-chart ul.third-list li,
+.accordion-body, .article-text p, .blog-text p {
+  color: #374151 !important; /* Dark Slate gray body default */
+}
+
+/* 3. Force secondary or muted text to be readable dark gray */
+.text-muted, .text-light-gray, .text-secondary1, .student-description p, .date, .time, .home-pagination .page-link {
+  color: #6B7280 !important; /* Secondary dark gray default */
+}
+
+/* 4. Force all white utilities and classes to dark colors on light backgrounds */
+.text-white, .text-light, .text-gray-50, .text-gray-100, .text-gray-200, .text-slate-100, .text-neutral-100, .text-zinc-100 {
+  color: #111827 !important;
+}
+
+/* 5. Force links on light backgrounds to be high-contrast emerald green */
+a, .text-blue, .text-primary {
+  color: #16A34A !important;
+}
+a:hover {
+  color: #115e59 !important;
+}
+
+/* 6. RESTORE WHITE TEXT ONLY INSIDE EXPLICIT DARK CONTAINERS / BANNER CONTAINERS */
+.tutela-alumni-sec h1, .tutela-alumni-sec h2, .tutela-alumni-sec h3, .tutela-alumni-sec h4, .tutela-alumni-sec h5, .tutela-alumni-sec h6,
+.why-us-home-sec h1, .why-us-home-sec h2, .why-us-home-sec h3, .why-us-home-sec h4, .why-us-home-sec h5, .why-us-home-sec h6,
+.student-details-sec h1, .student-details-sec h2, .student-details-sec h3, .student-details-sec h4,
+.students-sec h1, .students-sec h2, .students-sec h3, .students-sec h4,
+.media-section h1, .media-section h2, .media-section h3,
+.tutela-connect-sec h1, .tutela-connect-sec h2, .tutela-connect-sec h3,
+.home-contact-sec h1, .home-contact-sec h2, .home-contact-sec h3, .home-contact-sec h5, .home-contact-sec label,
+.team-single-sec h1, .team-single-sec h2, .team-single-sec h3, .team-single-sec h5,
+.banner h1, .banner h2, .banner h3, .banner h4, .banner h5, .banner h6,
+.blog-banner h1, .blog-banner h2, .blog-banner h3, .blog-banner h4, .blog-banner h5, .blog-banner h6,
+.sat-diagnostic h1, .sat-diagnostic h2, .sat-diagnostic h3,
+.act-diagnostic h1, .act-diagnostic h2, .act-diagnostic h3,
+.modus-sec h1, .modus-sec h2, .modus-sec h3,
+.together h1, .together h2, .together h3,
+.testimonial-box p, .testimonial-box p span, .testimonial-box h3, .testimonial-box h4 {
+  color: #FFFFFF !important;
+}
+
+/* Restore white text utilities inside dark containers */
+.tutela-alumni-sec .text-white, .why-us-home-sec .text-white, .student-details-sec .text-white, 
+.students-sec .text-white, .media-section .text-white, .tutela-connect-sec .text-white, 
+.home-contact-sec .text-white, .team-single-sec .text-white, .banner .text-white, 
+.blog-banner .text-white, .sat-diagnostic .text-white, .act-diagnostic .text-white, 
+.modus-sec .text-white, .together .text-white, .testimonial-box .text-white,
+.back-to-top-btn img {
+  color: #FFFFFF !important;
+}
+
+/* Restore light-gray text inside dark containers */
+.tutela-alumni-sec p, .why-us-home-sec p, .student-details-sec p, .students-sec p, 
+.media-section p, .tutela-connect-sec p, .home-contact-sec p, .team-single-sec p,
+.banner p, .blog-banner p, .sat-diagnostic p, .act-diagnostic p, .modus-sec p, .together p,
+.tutela-alumni-sec .text-light, .why-us-home-sec .text-light, .student-details-sec .text-light, 
+.students-sec .text-light, .media-section .text-light, .tutela-connect-sec .text-light, 
+.home-contact-sec .text-light, .team-single-sec .text-light, .banner .text-light, 
+.blog-banner .text-light, .sat-diagnostic .text-light, .act-diagnostic .text-light, 
+.modus-sec .text-light, .together .text-light, .testimonial-box .text-light,
+.tutela-alumni-sec .text-gray-100, .why-us-home-sec .text-gray-100, .banner .text-gray-100, .blog-banner .text-gray-100 {
+  color: #CBD5E1 !important;
+}
+
+/* Keep primary buttons text white on all layouts */
 .btn-phone a, 
 a.knowmorebtn,
 button.btn.btn-primary,
@@ -2835,49 +2891,30 @@ button.btn.btn-primary,
   color: #FFFFFF !important;
 }
 
-/* 3. Global overrides for other white/light utilities on light theme */
-.text-light, 
-.text-gray-100, 
-.text-gray-200, 
-.text-slate-100, 
-.text-neutral-100 {
-  color: #374151 !important;
+/* Keep secondary button text green on all layouts */
+.login-btn, 
+.btn.bg-white,
+.btn.btn-outline-secondary, 
+.course-btn,
+.btn-dots,
+.btn-college-kit,
+.btn-outline-dark {
+  color: #16A34A !important;
 }
-
-/* 4. Restore light gray colors inside dark sections/overlays/banners */
-.tutela-alumni-sec .text-light, 
-.why-us-home-sec .text-light, 
-.student-details-sec .text-light, 
-.students-sec .text-light, 
-.media-section .text-light, 
-.tutela-connect-sec .text-light, 
-.home-contact-sec .text-light, 
-.team-single-sec .text-light,
-.banner .text-light,
-.blog-banner .text-light,
-.sat-diagnostic .text-light,
-.act-diagnostic .text-light,
-.modus-sec .text-light,
-.together .text-light,
-.testimonial-box .text-light,
-.tutela-alumni-sec .text-gray-100,
-.why-us-home-sec .text-gray-100,
-.banner .text-gray-100,
-.blog-banner .text-gray-100 {
-  color: #F1F5F9 !important;
-}
-
-/* 5. Force headings to white inside dark banner/hero sections */
-.banner h1, .banner h2, .banner h3, .banner h4, .banner h5, .banner h6,
-.blog-banner h1, .blog-banner h2, .blog-banner h3, .blog-banner h4, .blog-banner h5, .blog-banner h6,
-.sat-diagnostic h1, .sat-diagnostic h2, .sat-diagnostic h3,
-.act-diagnostic h1, .act-diagnostic h2, .act-diagnostic h3,
-.modus-sec h1, .modus-sec h2, .modus-sec h3,
-.together h1, .together h2, .together h3 {
+.login-btn:hover, 
+.btn.bg-white:hover,
+.btn.btn-outline-secondary:hover, 
+.course-btn:hover,
+.btn-dots:hover,
+.btn-college-kit:hover,
+.btn-outline-dark:hover {
   color: #FFFFFF !important;
 }
 
-/* 6. Force paragraphs to light slate inside dark banner/hero sections */
-.banner p, .blog-banner p, .sat-diagnostic p, .act-diagnostic p, .modus-sec p, .together p {
-  color: #CBD5E1 !important;
+/* Ensure gradient keyword highlights remain transparent for background clip */
+h2.title1 span,
+h2.title1 span strong,
+.banner-text-shape {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
 }
