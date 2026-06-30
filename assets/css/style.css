@@ -2996,33 +2996,37 @@ h2.title1 span strong,
    ========================================================================== */
 
 .custom-hero-sec {
-  background-color: var(--tutela-base) !important;
-  background-image: radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.05) 0%, rgba(248, 250, 252, 0) 60%),
-                    radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.03) 0%, rgba(248, 250, 252, 0) 60%) !important;
+  position: relative !important;
+  background-image: linear-gradient(to right, rgba(15, 46, 34, 0.95) 0%, rgba(15, 46, 34, 0.75) 45%, rgba(15, 46, 34, 0.1) 100%),
+                    url('/assets/images/ivy-hero-bg.png') !important;
+  background-size: cover !important;
+  background-position: center right !important;
+  background-repeat: no-repeat !important;
   overflow: hidden;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid rgba(22, 101, 52, 0.15) !important;
+  padding: 110px 0 90px !important;
 }
 
 /* Subtle Badge */
 .hero-badge {
-  background: rgba(16, 185, 129, 0.08);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
   padding: 6px 16px;
   border-radius: 100px;
 }
 .badge-dot {
   width: 8px;
   height: 8px;
-  background: var(--glow-emerald);
+  background: #4ADE80 !important;
   border-radius: 50%;
   margin-right: 8px;
   display: inline-block;
-  box-shadow: 0 0 8px var(--glow-emerald);
+  box-shadow: 0 0 8px #4ADE80;
 }
 .badge-text {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--glow-forest);
+  color: #A7F3D0 !important;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -3033,10 +3037,10 @@ h2.title1 span strong,
   font-weight: 800 !important;
   line-height: 1.15 !important;
   letter-spacing: -0.03em !important;
-  color: var(--text-white) !important;
+  color: #FFFFFF !important;
 }
 .text-gradient-green {
-  background: var(--gradient-accent) !important;
+  background: linear-gradient(135deg, #4ADE80 0%, #22C55E 100%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   color: transparent !important;
@@ -3046,12 +3050,12 @@ h2.title1 span strong,
   font-size: clamp(1.25rem, 2.5vw, 1.8rem) !important;
   font-weight: 600 !important;
   letter-spacing: -0.01em !important;
-  color: var(--text-white) !important;
+  color: #F8FAFC !important;
 }
 .hero-support-text {
   font-size: clamp(1rem, 1.5vw, 1.15rem) !important;
   line-height: 1.7 !important;
-  color: var(--text-silver) !important;
+  color: #E2E8F0 !important;
   max-width: 540px;
 }
 
@@ -3066,7 +3070,7 @@ h2.title1 span strong,
 }
 .trust-label {
   font-size: 0.85rem !important;
-  color: var(--text-muted) !important;
+  color: #A7F3D0 !important;
   margin-bottom: 0;
   font-weight: 500;
 }
