@@ -2797,3 +2797,87 @@ footer a:hover {
   animation-duration: 1s !important;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
+
+/* ==========================================================================
+   TUTELA PREP - TEXT READABILITY & CONTRAST CASCADES (WCAG AA COMPLIANT)
+   ========================================================================== */
+
+/* 1. Global text-white override (makes text-white dark slate by default on light backgrounds) */
+.text-white {
+  color: #1F2937 !important;
+}
+
+/* 2. Restore white text specifically inside dark sections/overlays/banners */
+.tutela-alumni-sec .text-white,
+.why-us-home-sec .text-white,
+.student-details-sec .text-white,
+.students-sec .text-white,
+.media-section .text-white,
+.tutela-connect-sec .text-white,
+.home-contact-sec .text-white,
+.team-single-sec .text-white,
+.banner .text-white,
+.blog-banner .text-white,
+.sat-diagnostic .text-white,
+.act-diagnostic .text-white,
+.modus-sec .text-white,
+.together .text-white,
+.testimonial-box .text-white,
+.testimonial-box p, 
+.testimonial-box p span,
+.timeline-container span,
+.back-to-top-btn img,
+.btn-phone a, 
+a.knowmorebtn,
+button.btn.btn-primary,
+.start-journey-btn,
+.btn-dark {
+  color: #FFFFFF !important;
+}
+
+/* 3. Global overrides for other white/light utilities on light theme */
+.text-light, 
+.text-gray-100, 
+.text-gray-200, 
+.text-slate-100, 
+.text-neutral-100 {
+  color: #374151 !important;
+}
+
+/* 4. Restore light gray colors inside dark sections/overlays/banners */
+.tutela-alumni-sec .text-light, 
+.why-us-home-sec .text-light, 
+.student-details-sec .text-light, 
+.students-sec .text-light, 
+.media-section .text-light, 
+.tutela-connect-sec .text-light, 
+.home-contact-sec .text-light, 
+.team-single-sec .text-light,
+.banner .text-light,
+.blog-banner .text-light,
+.sat-diagnostic .text-light,
+.act-diagnostic .text-light,
+.modus-sec .text-light,
+.together .text-light,
+.testimonial-box .text-light,
+.tutela-alumni-sec .text-gray-100,
+.why-us-home-sec .text-gray-100,
+.banner .text-gray-100,
+.blog-banner .text-gray-100 {
+  color: #F1F5F9 !important;
+}
+
+/* 5. Force headings to white inside dark banner/hero sections */
+.banner h1, .banner h2, .banner h3, .banner h4, .banner h5, .banner h6,
+.blog-banner h1, .blog-banner h2, .blog-banner h3, .blog-banner h4, .blog-banner h5, .blog-banner h6,
+.sat-diagnostic h1, .sat-diagnostic h2, .sat-diagnostic h3,
+.act-diagnostic h1, .act-diagnostic h2, .act-diagnostic h3,
+.modus-sec h1, .modus-sec h2, .modus-sec h3,
+.together h1, .together h2, .together h3 {
+  color: #FFFFFF !important;
+}
+
+/* 6. Force paragraphs to light slate inside dark banner/hero sections */
+.banner p, .blog-banner p, .sat-diagnostic p, .act-diagnostic p, .modus-sec p, .together p {
+  color: #CBD5E1 !important;
+}
