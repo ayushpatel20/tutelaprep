@@ -3247,13 +3247,14 @@ h2.title1 span strong,
    ========================================== */
 
 .uni-partners-sec {
-  background: linear-gradient(180deg, #F4FAF6 0%, #EDF8F1 40%, #E4F4EA 100%) !important;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F7FCF8 35%, #EEF8F2 70%, #F9FDFB 100%) !important;
   border-top: 1px solid rgba(22, 101, 52, 0.08) !important;
   border-bottom: 1px solid rgba(22, 101, 52, 0.08) !important;
-  padding: 90px 0 !important;
+  padding: 80px 0 !important;
   color: #1F2937 !important;
   position: relative;
   overflow: hidden;
+  margin-top: 20px !important; /* Visual spacing from the hero section */
 }
 
 /* Subtle background glowing blobs */
@@ -3285,7 +3286,7 @@ h2.title1 span strong,
 /* Typography styles for partner section */
 .uni-partners-sec .uni-partners-heading {
   font-size: clamp(2rem, 4vw, 3rem) !important;
-  font-weight: 700 !important;
+  font-weight: 800 !important;
   color: #14532D !important;
   letter-spacing: -0.02em !important;
   font-family: "Plus Jakarta Sans", "Manrope", sans-serif !important;
@@ -3297,24 +3298,25 @@ h2.title1 span strong,
   display: block;
 }
 .uni-partners-sec .uni-partners-subheading {
-  font-size: clamp(0.95rem, 1.5vw, 1.15rem) !important;
+  font-size: clamp(1rem, 1.5vw, 1.15rem) !important;
   color: #4B5563 !important;
   font-weight: 500 !important;
   font-family: "Manrope", sans-serif !important;
   z-index: 2;
   position: relative;
+  max-width: 700px;
 }
 
 /* Glass Wrapper */
 .glass-partners-wrapper {
-  background: rgba(255, 255, 255, 0.75) !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
   border: 1px solid rgba(22, 101, 52, 0.08) !important;
   border-radius: 24px !important;
-  padding: 40px 32px !important;
+  padding: 32px 40px !important;
   margin-top: 35px !important;
-  box-shadow: 0 12px 40px rgba(16, 185, 129, 0.08) !important;
+  box-shadow: 0 15px 50px rgba(16, 185, 129, 0.08) !important;
   z-index: 2;
   position: relative;
 }
