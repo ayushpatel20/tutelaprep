@@ -2918,3 +2918,250 @@ h2.title1 span strong,
   color: transparent !important;
   -webkit-text-fill-color: transparent !important;
 }
+
+/* ==========================================================================
+   TUTELA PREP - MODERN PREMIUM HERO SECTION REDESIGN
+   ========================================================================== */
+
+.custom-hero-sec {
+  background-color: var(--tutela-base) !important;
+  background-image: radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.05) 0%, rgba(248, 250, 252, 0) 60%),
+                    radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.03) 0%, rgba(248, 250, 252, 0) 60%) !important;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Subtle Badge */
+.hero-badge {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  padding: 6px 16px;
+  border-radius: 100px;
+}
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--glow-emerald);
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-block;
+  box-shadow: 0 0 8px var(--glow-emerald);
+}
+.badge-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--glow-forest);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Headings */
+.hero-headline {
+  font-size: clamp(2.5rem, 5vw, 3.8rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.03em !important;
+  color: var(--text-white) !important;
+}
+.text-gradient-green {
+  background: var(--gradient-accent) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  display: inline-block;
+}
+.hero-subheadline {
+  font-size: clamp(1.25rem, 2.5vw, 1.8rem) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  color: var(--text-white) !important;
+}
+.hero-support-text {
+  font-size: clamp(1rem, 1.5vw, 1.15rem) !important;
+  line-height: 1.7 !important;
+  color: var(--text-silver) !important;
+  max-width: 540px;
+}
+
+/* Trust Indicators */
+.trust-card {
+  padding: 10px 0;
+}
+.trust-num {
+  font-size: 1.8rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 4px;
+}
+.trust-label {
+  font-size: 0.85rem !important;
+  color: var(--text-muted) !important;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+/* Right Column Visual Composition */
+.hero-right-visual {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-glow-blob-1 {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(134, 239, 172, 0.25) 0%, rgba(16, 185, 129, 0) 70%);
+  z-index: 1;
+  filter: blur(20px);
+}
+.hero-glow-blob-2 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, rgba(22, 101, 52, 0) 70%);
+  z-index: 1;
+  filter: blur(20px);
+}
+.visual-stack {
+  width: 100%;
+  max-width: 460px;
+  z-index: 2;
+}
+
+/* Visual glass cards */
+.glass-visual-card {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(16, 185, 129, 0.15) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.08) !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.glass-visual-card:hover {
+  transform: translateY(-6px) scale(1.02) !important;
+  box-shadow: 0 28px 50px rgba(16, 185, 129, 0.15) !important;
+  border-color: rgba(16, 185, 129, 0.35) !important;
+}
+
+/* Card Main Positioning */
+.card-main {
+  width: 85%;
+  margin-right: auto;
+}
+.card-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--glow-forest);
+  background: rgba(16, 185, 129, 0.08);
+  padding: 4px 10px;
+  border-radius: 50px;
+}
+.card-time {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+}
+.card-student-name {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.score-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0f172a;
+  background: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.card-uni-target {
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+/* Metric overlay card positioning */
+.card-metrics {
+  bottom: 5%;
+  right: -5%;
+  width: 200px;
+  z-index: 3;
+}
+.trend-icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.metric-value {
+  font-size: 1.15rem !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+}
+.metric-label {
+  font-size: 0.75rem !important;
+  color: #64748b !important;
+}
+
+/* Secondary student overlay card positioning */
+.card-secondary {
+  top: -10%;
+  right: 0%;
+  width: 240px;
+  z-index: 3;
+}
+.card-student-name-small {
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  margin-bottom: 4px;
+}
+.card-score-detail {
+  font-size: 0.75rem !important;
+  color: #475569 !important;
+  margin-bottom: 8px;
+}
+.accepted-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: var(--gradient-accent);
+  padding: 3px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Breakpoint tweaks for mobile screens */
+@media (max-width: 991px) {
+  .hero-right-visual {
+    margin-top: 40px;
+    min-height: 360px;
+  }
+  .card-main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-secondary {
+    top: -5%;
+    right: 2%;
+  }
+  .card-metrics {
+    bottom: -5%;
+    right: 2%;
+  }
+}
