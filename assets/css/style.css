@@ -3241,3 +3241,77 @@ h2.title1 span strong,
     right: 2%;
   }
 }
+
+/* ==========================================
+   TUTELA PREP - UNIVERSITY PARTNERS SECTION REDESIGN
+   ========================================== */
+
+.uni-partners-sec {
+  background: linear-gradient(180deg, #0B1F18 0%, #102A20 50%, #0D1D18 100%) !important;
+  border-top: 1px solid rgba(22, 101, 52, 0.15) !important;
+  border-bottom: 1px solid rgba(22, 101, 52, 0.15) !important;
+  padding: 80px 0 !important;
+  color: #FFFFFF !important;
+}
+
+/* Typography styles for dark partner section */
+.uni-partners-sec .uni-partners-heading {
+  font-size: clamp(1.5rem, 3vw, 2.2rem) !important;
+  font-weight: 800 !important;
+  color: #FFFFFF !important;
+  letter-spacing: -0.02em;
+  font-family: "Manrope", sans-serif !important;
+}
+.uni-partners-sec .uni-partners-heading::after {
+  content: "" !important;
+  display: block;
+}
+.uni-partners-sec .uni-partners-subheading {
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem) !important;
+  color: #D1D5DB !important;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif !important;
+}
+
+/* Glass Wrapper */
+.glass-partners-wrapper {
+  background: rgba(255, 255, 255, 0.04) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 24px !important;
+  padding: 40px 32px !important;
+  margin-top: 30px !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Logo styling */
+.uni-partners-sec .single-logo {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 60px !important;
+  padding: 5px !important;
+  background: transparent !important;
+  border: 0 !important;
+}
+.uni-partners-sec .single-logo img {
+  max-height: 48px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  opacity: 0.85 !important;
+  filter: brightness(0) invert(1) drop-shadow(0 0 3px rgba(255, 255, 255, 0.15)) !important; /* Crisp white glow & monochrome */
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.uni-partners-sec .single-logo:hover img {
+  opacity: 1 !important;
+  filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(74, 222, 128, 0.6)) !important; /* Green glowing hover indicator */
+  transform: scale(1.05) !important;
+}
+
+/* Override owl carousel items margin in partners */
+.uni-partners-sec .owl-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
