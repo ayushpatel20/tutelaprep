@@ -2203,38 +2203,42 @@ body.page-partner-counsellors .together .col-md-6:first-child p:first-of-type {
 }
 
 /* ==========================================================================
-   TUTELA PREP - PREMIUM COSMIC-NAVY THEME & GLASSMORPHISM OVERRIDES
+   TUTELA PREP - PREMIUM WHITE & GREEN THEME & SWAPPED FOOTER OVERRIDES
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  /* Premium Slate-Navy Cosmic Base Theme */
-  --tutela-base: #050814;
-  --sec-bg: #0b1220;
-  --bg-light-gray: #090e24;
-  --border-color: rgba(255, 255, 255, 0.08);
+  /* Premium White + Green Palette */
+  --tutela-base: #F8FAFC;          /* Soft White page base */
+  --sec-bg: #FFFFFF;              /* Pure White card background */
+  --bg-light-gray: #DCFCE7;       /* Mint Green highlight panel */
+  --border-color: rgba(16, 185, 129, 0.12); /* Emerald green border */
 
-  /* Accessible High-Contrast Colors (WCAG AA Compliant) */
-  --text-white: #FFFFFF;
-  --text-silver: #F1F5F9;
-  --text-muted: #94A3B8;
+  /* High contrast text colors for light theme */
+  --text-white: #0F172A;           /* Dark Slate headings (overrides headings correctly) */
+  --text-silver: #334155;          /* Slate Gray paragraphs */
+  --text-muted: #64748B;          /* Muted Gray secondary info */
 
-  /* Premium Indigo & Cyan Glow Accents */
-  --glow-cyan: #06b6d4;
-  --glow-indigo: #6366f1;
-  --glow-purple: #8b5cf6;
-  --gradient-accent: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-  --gradient-dark: linear-gradient(180deg, #050814 0%, #0b1220 100%);
+  /* Green Accent Glows & Gradients */
+  --glow-emerald: #10B981;
+  --glow-forest: #166534;
+  --glow-sage: #86EFAC;
+  --gradient-accent: linear-gradient(135deg, #10B981 0%, #166534 100%);
+  --gradient-bg: linear-gradient(180deg, #F8FAFC 0%, #DCFCE7 100%);
   
   --font-heading: 'Plus Jakarta Sans', 'Space Grotesk', sans-serif;
   --font-body: 'Inter', 'Manrope', sans-serif;
+
+  /* Dark Green accents for specific dark sections */
+  --dark-green-base: #0B0F19;
+  --dark-green-card: rgba(15, 23, 42, 0.65);
 }
 
 /* Global Style Reset and Body Enhancement */
 body {
   background-color: var(--tutela-base) !important;
-  background-image: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, rgba(6, 182, 212, 0.05) 50%, rgba(5, 8, 20, 0) 80%) !important;
+  background-image: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.08) 0%, rgba(248, 250, 252, 0) 70%) !important;
   background-attachment: fixed !important;
   color: var(--text-silver) !important;
   font-family: var(--font-body) !important;
@@ -2260,20 +2264,24 @@ p, li, span, a, td, th {
 
 /* Make links readable and modern */
 a {
-  color: #3b82f6 !important;
+  color: var(--glow-emerald) !important;
   transition: all 0.3s ease !important;
+  text-decoration: none !important;
 }
 a:hover {
-  color: #6366f1 !important;
-  text-shadow: 0 0 8px rgba(99, 102, 241, 0.2) !important;
+  color: var(--glow-forest) !important;
+  text-shadow: 0 0 8px rgba(16, 185, 129, 0.15) !important;
 }
 
-/* Recolor utility classes to light gray on dark layout */
+/* Recolor utility classes to slate/slate-dark on light layout */
 .text-dark, .text-black, .text-deep-gray {
-  color: var(--text-silver) !important;
+  color: var(--text-white) !important;
 }
 .text-muted, .text-light-gray {
   color: var(--text-muted) !important;
+}
+.text-blue, .text-primary {
+  color: var(--glow-emerald) !important;
 }
 
 /* Custom premium scrollbar */
@@ -2284,30 +2292,28 @@ a:hover {
   background: var(--tutela-base);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(16, 185, 129, 0.2);
   border-radius: 5px;
   border: 2px solid var(--tutela-base);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--glow-cyan);
+  background: var(--glow-emerald);
 }
 
-/* Global Section Containers */
-.tutela-alumni-sec,
-.why-us-home-sec,
-.student-details-sec,
-.students-sec,
-.media-section,
-.tutela-connect-sec,
-.home-contact-sec,
-.team-single-sec {
-  background-color: var(--bg-light-gray) !important;
-  border: 1px solid var(--border-color) !important;
-  border-radius: 24px !important;
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4) !important;
-  overflow: hidden;
-  padding: 60px 40px !important;
-  margin-bottom: 40px !important;
+/* Specific gradient keyword highlight */
+h2.title1 span,
+h2.title1 span strong,
+.banner-text-shape {
+  background: var(--gradient-accent) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  display: inline-block;
+}
+.banner-text-shape::after, 
+h2.title1 span::after, 
+h2.title1.small-shape-title span::after {
+  display: none !important;
 }
 
 /* Banner backgrounds overlay enhancement */
@@ -2322,7 +2328,7 @@ a:hover {
   left: 0 !important;
   width: 100% !important;
   height: 100% !important;
-  background: linear-gradient(180deg, rgba(5, 8, 20, 0.5) 0%, rgba(5, 8, 20, 0.9) 100%) !important;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.35) 0%, rgba(15, 23, 42, 0.8) 100%) !important;
   z-index: -1 !important;
 }
 .banner > *, .home-contact-sec > *, .modus-sec > *, .blog-banner > * {
@@ -2330,7 +2336,7 @@ a:hover {
   z-index: 2 !important;
 }
 
-/* All Cards and Containers */
+/* Light theme premium cards */
 .bg-white, 
 .accordion-bg-sat, 
 .timeline-container .content, 
@@ -2353,12 +2359,10 @@ a:hover {
 .media-bg img,
 .univer img,
 .tutela img {
-  background-color: rgba(11, 18, 32, 0.65) !important;
-  backdrop-filter: blur(16px) !important;
-  -webkit-backdrop-filter: blur(16px) !important;
+  background-color: var(--sec-bg) !important;
   border: 1px solid var(--border-color) !important;
   color: var(--text-silver) !important;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.04) !important;
   border-radius: 20px !important;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
@@ -2370,26 +2374,23 @@ a:hover {
 .blogger-box:hover,
 .z-alumni-card:hover,
 .student-detail-box:hover {
-  border-color: rgba(255, 255, 255, 0.18) !important;
-  background-color: rgba(15, 23, 42, 0.8) !important;
+  border-color: rgba(16, 185, 129, 0.3) !important;
   transform: translateY(-4px) !important;
-  box-shadow: 0 16px 36px 0 rgba(99, 102, 241, 0.12) !important;
+  box-shadow: 0 16px 36px rgba(16, 185, 129, 0.09) !important;
 }
 
-/* Hide old shape icons and apply gradient texts instead */
-.banner-text-shape::after, 
-h2.title1 span::after, 
-h2.title1.small-shape-title span::after {
-  display: none !important;
-}
-h2.title1 span,
-h2.title1 span strong,
-.banner-text-shape {
-  background: var(--gradient-accent) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  color: transparent !important;
-  display: inline-block;
+/* Force dark text on light card headings */
+.why-us-home-text h3, 
+.why-us-home-text h5, 
+.team-content.card h5, 
+.advisor h3, 
+.teamtext h3,
+.blog-text h3, 
+.article-text h3, 
+.blog-banner-text h1,
+.blog-single-content h2,
+.blog-single-content h3 {
+  color: var(--text-white) !important;
 }
 
 /* Specific Section Override: Blog Pages */
@@ -2399,50 +2400,44 @@ h2.title1 span strong,
 .blog-single-content, 
 .blog-bg-single {
   background-color: var(--tutela-base) !important;
-  background-image: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.08) 0%, rgba(5, 8, 20, 0) 75%) !important;
+  background-image: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.05) 0%, rgba(248, 250, 252, 0) 75%) !important;
   border-top: 1px solid var(--border-color) !important;
 }
-.blog-text h3, .article-text h3, .blog-banner-text h1, .blog-single-content h2, .blog-single-content h3 {
-  color: #FFFFFF !important;
-}
 .blog-text p, .article-text p, .blog-banner-text p, .blog-single-content p, .blog-single-content ul li {
-  color: #D1D5DB !important;
+  color: var(--text-silver) !important;
 }
 
 /* Team & Leadership Bios */
-.team-content.card h5, .advisor h3, .teamtext h3 {
-  color: #FFFFFF !important;
-}
 .team-content.card h5 span {
-  color: #9CA3AF !important;
+  color: var(--text-muted) !important;
 }
 .team-content.card p, .teamtext p, .advisor p {
-  color: #D1D5DB !important;
+  color: var(--text-silver) !important;
   line-height: 1.8 !important;
 }
 
-/* Glowing neon badges */
+/* Glowing green badges */
 .bg-light.border, h5.bg-light {
-  background-color: rgba(6, 182, 212, 0.15) !important;
-  color: var(--glow-cyan) !important;
-  border: 1px solid rgba(6, 182, 212, 0.3) !important;
+  background-color: #DCFCE7 !important;
+  color: var(--glow-forest) !important;
+  border: 1px solid rgba(16, 185, 129, 0.25) !important;
   border-radius: 6px !important;
 }
 
 /* Student Score stats */
 .score-percent h2 {
-  color: #FFFFFF !important;
+  color: var(--glow-emerald) !important;
 }
 .score-percent h4 {
-  color: #F8FAFC !important;
+  color: var(--text-white) !important;
 }
 .score-percent h3 {
-  color: #9CA3AF !important;
+  color: var(--text-muted) !important;
 }
 
 /* Overlay for student outcomes */
 .testimonial-box {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.85) 85%) !important;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0) 30%, rgba(15, 23, 42, 0.8) 85%) !important;
   border-radius: 12px !important;
 }
 .testimonial-box p, .testimonial-box p span {
@@ -2450,7 +2445,7 @@ h2.title1 span strong,
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
 }
 
-/* All Button Overrides */
+/* Button Overrides */
 .btn-phone a, 
 a.knowmorebtn, 
 .login-btn, 
@@ -2471,16 +2466,16 @@ button.btn.btn-primary,
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-/* Primary / Gradient Buttons (Blue to Purple Gradient with subtle glow) */
+/* Primary Buttons (Emerald to Forest gradient with white text) */
 .btn-phone a, 
 a.knowmorebtn,
 button.btn.btn-primary,
 .start-journey-btn,
 .btn-dark {
   background: var(--gradient-accent) !important;
-  color: var(--text-white) !important;
+  color: #FFFFFF !important;
   border: none !important;
-  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35) !important;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3) !important;
 }
 .btn-phone a:hover, 
 a.knowmorebtn:hover,
@@ -2488,56 +2483,59 @@ button.btn.btn-primary:hover,
 .start-journey-btn:hover,
 .btn-dark:hover {
   transform: translateY(-2px) !important;
-  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.55) !important;
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45) !important;
+  color: #FFFFFF !important;
 }
 
-/* Secondary / Glass Outline Buttons */
+/* Secondary Buttons (White background, green border, green text) */
 .login-btn, 
 .btn.bg-white,
 .btn.btn-outline-secondary, 
 .course-btn,
 .btn-dots,
+.btn-dots:hover,
 .btn-college-kit,
 .btn-outline-dark {
-  background: rgba(255, 255, 255, 0.05) !important;
-  color: var(--text-white) !important;
-  border: 1px solid var(--border-color) !important;
+  background-color: #FFFFFF !important;
+  border: 2px solid var(--glow-emerald) !important;
+  color: var(--glow-emerald) !important;
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.05) !important;
 }
 .login-btn:hover, 
 .btn.bg-white:hover,
 .btn.btn-outline-secondary:hover, 
 .course-btn:hover,
-.btn-dots:hover,
 .btn-college-kit:hover,
 .btn-outline-dark:hover {
-  background: rgba(255, 255, 255, 0.12) !important;
-  border-color: rgba(255, 255, 255, 0.25) !important;
-  color: var(--text-white) !important;
+  background-color: var(--glow-emerald) !important;
+  color: #FFFFFF !important;
+  border-color: var(--glow-emerald) !important;
   transform: translateY(-2px) !important;
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.25) !important;
 }
 
-/* Header & Sticky Navbar */
+/* Navbar styling for Light+Green theme */
 .top-header {
-  background-color: rgba(5, 8, 20, 0.6) !important;
+  background-color: #FFFFFF !important;
   border-bottom: 1px solid var(--border-color);
 }
 .main-header {
-  background: rgba(11, 18, 32, 0.7) !important;
+  background: rgba(255, 255, 255, 0.85) !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--border-color) !important;
   border-radius: 16px !important;
   margin-top: 15px;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.04) !important;
 }
 .main-header.sticky {
-  background: rgba(5, 8, 20, 0.95) !important;
+  background: rgba(255, 255, 255, 0.96) !important;
   border-radius: 0 !important;
   margin-top: 0;
   border-left: 0 !important;
   border-right: 0 !important;
   border-top: 0 !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.06) !important;
 }
 .main-header .nav-link {
   color: var(--text-muted) !important;
@@ -2546,7 +2544,7 @@ button.btn.btn-primary:hover,
 .main-header .nav-link:hover, 
 .main-header .nav-link.active,
 .navbar .navbar-nav .nav-item .active {
-  color: var(--text-white) !important;
+  color: var(--text-dark) !important;
 }
 .main-header .nav-link::after {
   content: '';
@@ -2566,13 +2564,11 @@ button.btn.btn-primary:hover,
 
 /* Dropdowns */
 .dropdown-menu {
-  background: rgba(11, 18, 32, 0.95) !important;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: #FFFFFF !important;
   border: 1px solid var(--border-color) !important;
   border-radius: 12px !important;
   padding: 8px !important;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 32px rgba(16, 185, 129, 0.08);
 }
 .dropdown-item {
   color: var(--text-muted) !important;
@@ -2582,23 +2578,22 @@ button.btn.btn-primary:hover,
   transition: all 0.2s ease;
 }
 .dropdown-item:hover {
-  background: rgba(255, 255, 255, 0.06) !important;
-  color: var(--text-white) !important;
+  background: #DCFCE7 !important;
+  color: var(--glow-forest) !important;
 }
 
 /* Collapsed mobile menu */
 .navbar-collapse {
-  background-color: rgba(11, 18, 32, 0.97) !important;
+  background-color: rgba(255, 255, 255, 0.98) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
   border: 1px solid var(--border-color) !important;
   border-radius: 12px !important;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5) !important;
 }
 
 /* Sidebar section active state */
 .sat-single .sidebar .list-group-item {
-  background-color: rgba(255, 255, 255, 0.02) !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
   color: var(--text-silver) !important;
   border: 1px solid var(--border-color) !important;
   border-radius: 8px !important;
@@ -2608,11 +2603,11 @@ button.btn.btn-primary:hover,
 .sat-single .sidebar .list-group-item:hover,
 .sat-single .sidebar .list-group-item.active {
   background: var(--gradient-accent) !important;
-  color: var(--text-white) !important;
+  color: #FFFFFF !important;
   border-color: transparent !important;
 }
 
-/* Forms input visibility overrides */
+/* Inputs styling */
 .form-control, 
 .form-select, 
 select.input-group-text,
@@ -2624,9 +2619,9 @@ select.input-group-text,
 .modal .form-control,
 .modal .form-select,
 .event-signup .form-control {
-  background-color: rgba(11, 18, 32, 0.8) !important;
+  background-color: #FFFFFF !important;
   border: 1px solid var(--border-color) !important;
-  color: var(--text-white) !important;
+  color: var(--text-dark) !important;
   border-radius: 10px !important;
   padding: 12px 16px !important;
   transition: all 0.3s ease !important;
@@ -2635,31 +2630,32 @@ select.input-group-text,
 .form-select:focus,
 .home-contact-sec .form-control:focus,
 .home-contact-sec .form-select:focus {
-  background-color: rgba(15, 23, 42, 0.98) !important;
-  border-color: var(--glow-cyan) !important;
-  box-shadow: 0 0 15px rgba(6, 182, 212, 0.25) !important;
-  color: #FFFFFF !important;
+  background-color: #FFFFFF !important;
+  border-color: var(--glow-emerald) !important;
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.2) !important;
+  color: var(--text-dark) !important;
 }
 ::placeholder {
-  color: #64748b !important;
+  color: #94a3b8 !important;
   opacity: 1 !important;
 }
 ::-webkit-input-placeholder {
-  color: #64748b !important;
+  color: #94a3b8 !important;
 }
 
 /* Accordions */
 .faq-sec .accordion-button,
 .accordion-button {
   background-color: transparent !important;
-  color: var(--text-white) !important;
+  color: var(--text-dark) !important;
   border: none !important;
   box-shadow: none !important;
   padding: 20px 24px !important;
 }
 .accordion-button:not(.collapsed) {
-  background-color: rgba(255, 255, 255, 0.03) !important;
+  background-color: #DCFCE7 !important;
   border-bottom: 1px solid var(--border-color) !important;
+  color: var(--glow-forest) !important;
 }
 .accordion-body {
   background-color: transparent !important;
@@ -2667,16 +2663,18 @@ select.input-group-text,
   padding: 24px !important;
 }
 
-/* Modals */
+/* Modals styling */
 .modal-backdrop {
-  background-color: #03050a !important;
+  background-color: #0b1510 !important;
 }
 .modal-content {
-  background-color: rgba(11, 18, 32, 0.96) !important;
-  backdrop-filter: blur(24px) !important;
+  background-color: #FFFFFF !important;
   border: 1px solid var(--border-color) !important;
   border-radius: 24px !important;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6) !important;
+  box-shadow: 0 24px 60px rgba(16, 185, 129, 0.1) !important;
+}
+.modal h2, .modal h3, .modal h5, .modal label {
+  color: var(--text-dark) !important;
 }
 
 /* Table Chart Stylings */
@@ -2686,8 +2684,8 @@ select.input-group-text,
   color: var(--text-silver) !important;
 }
 .table-chart ul li.list-group-item:first-child, .table-chart thead td {
-  background-color: rgba(11, 18, 32, 0.9) !important;
-  color: var(--text-white) !important;
+  background-color: #DCFCE7 !important;
+  color: var(--glow-forest) !important;
 }
 .table-chart tbody td:first-child {
   border-left: 1px solid var(--border-color) !important;
@@ -2702,30 +2700,96 @@ select.input-group-text,
 
 /* Timeline center line gradient */
 .timeline::after {
-  background: linear-gradient(180deg, var(--glow-cyan) 0%, var(--glow-purple) 100%) !important;
+  background: linear-gradient(180deg, var(--glow-emerald) 0%, var(--glow-forest) 100%) !important;
   opacity: 0.3 !important;
 }
 .timeline-container span {
   background: var(--gradient-accent) !important;
-  color: var(--text-white) !important;
-  box-shadow: 0 0 15px rgba(99, 102, 241, 0.4) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.4) !important;
 }
 
-/* Footer overrides */
+/* Swapped Footer Layout and Back to Top Styling */
 footer {
-  background-color: rgba(5, 8, 20, 0.96) !important;
+  background-color: #FFFFFF !important;
   border-top: 1px solid var(--border-color) !important;
   padding: 80px 0 40px !important;
 }
 footer h5 {
-  color: var(--text-white) !important;
+  color: var(--text-dark) !important;
 }
 footer a {
   color: var(--text-muted) !important;
   transition: color 0.2s ease !important;
 }
 footer a:hover {
-  color: var(--text-white) !important;
+  color: var(--glow-emerald) !important;
+}
+.back-to-top-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50% !important;
+  background: var(--gradient-accent) !important;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3) !important;
+  transition: all 0.3s ease !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+.back-to-top-btn:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.5) !important;
+}
+.back-to-top-btn img {
+  filter: brightness(0) invert(1) !important; /* Force white arrow */
+  width: 18px !important;
+  height: auto;
+}
+
+/* Specific Dark Accent Section Layout Overrides (Deep Green + Emerald accents) */
+.tutela-alumni-sec,
+.why-us-home-sec,
+.student-details-sec,
+.students-sec,
+.media-section,
+.tutela-connect-sec,
+.home-contact-sec,
+.team-single-sec {
+  background-color: var(--dark-green-base) !important;
+  background-image: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.12) 0%, rgba(11, 15, 25, 0) 80%) !important;
+  border: 1px solid rgba(16, 185, 129, 0.15) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3) !important;
+  padding: 60px 40px !important;
+  margin-bottom: 40px !important;
+  color: #E2E8F0 !important;
+}
+
+/* Force white text in these dark container sections */
+.tutela-alumni-sec h2, .tutela-alumni-sec h3, .tutela-alumni-sec h4, .tutela-alumni-sec h5,
+.why-us-home-sec h2, .why-us-home-sec h3, .why-us-home-sec h5,
+.student-details-sec h2, .student-details-sec h3, .student-details-sec h4,
+.students-sec h2, .students-sec h4,
+.media-section h2, .media-section h3,
+.tutela-connect-sec h2, .tutela-connect-sec h3,
+.home-contact-sec h2, .home-contact-sec h3, .home-contact-sec h5, .home-contact-sec label,
+.team-single-sec h2, .team-single-sec h5, .team-single-sec h3 {
+  color: #FFFFFF !important;
+}
+
+.tutela-alumni-sec p, .why-us-home-sec p, .student-details-sec p, .students-sec p, .media-section p, .tutela-connect-sec p, .home-contact-sec p, .team-single-sec p {
+  color: #CBD5E1 !important;
+}
+
+/* Cards inside these dark containers */
+.tutela-alumni-sec .z-alumni-card,
+.student-details-sec .student-detail-box,
+.tutela-connect-sec .tutela-connect-bg,
+.home-contact-sec .card {
+  background-color: var(--dark-green-card) !important;
+  border-color: rgba(16, 185, 129, 0.15) !important;
+  color: #CBD5E1 !important;
 }
 
 /* WOW.js Scroll Reveal Animation Enhancements */
