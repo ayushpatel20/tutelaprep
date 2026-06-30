@@ -1,0 +1,6 @@
+services:
+  - type: static
+    name: tutela-prep
+    env: static
+    buildCommand: npm run build:render
+    publishPath: dist

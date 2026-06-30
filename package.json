@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:render": "python build.py && vite build && mkdir -p dist/assets/images dist/assets/css dist/assets/js dist/assets/fonts && cp -R assets/images/. dist/assets/images/ && cp -R assets/css/. dist/assets/css/ && cp -R assets/js/. dist/assets/js/ && cp -R assets/fonts/. dist/assets/fonts/",
     "preview": "vite preview"
   },
   "devDependencies": {
