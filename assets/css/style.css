@@ -2709,21 +2709,76 @@ select.input-group-text,
   box-shadow: 0 0 15px rgba(16, 185, 129, 0.4) !important;
 }
 
-/* Swapped Footer Layout and Back to Top Styling */
+/* Swapped Footer Layout and Premium Dark Green Styling */
 footer {
-  background-color: #FFFFFF !important;
-  border-top: 1px solid var(--border-color) !important;
-  padding: 80px 0 40px !important;
+  background: linear-gradient(135deg, #0F2E22 0%, #123524 50%, #0B2018 100%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 90px 0 50px !important;
 }
-footer h5 {
-  color: var(--text-dark) !important;
+footer h5, footer h5 button {
+  color: #FFFFFF !important;
+}
+footer p, footer li, footer td, footer span {
+  color: #D1FAE5 !important;
+}
+footer p span {
+  color: #A7F3D0 !important;
 }
 footer a {
-  color: var(--text-muted) !important;
-  transition: color 0.2s ease !important;
+  color: #F8FAFC !important;
+  transition: all 0.3s ease !important;
 }
 footer a:hover {
-  color: var(--glow-emerald) !important;
+  color: #4ADE80 !important;
+  text-shadow: 0 0 8px rgba(74, 222, 128, 0.4) !important;
+}
+
+/* Footer accordion mobile support */
+footer .accordion-button {
+  color: #FFFFFF !important;
+}
+footer .accordion-button:not(.collapsed) {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #4ADE80 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+footer .accordion-body {
+  color: #D1FAE5 !important;
+}
+
+/* Social icons circular border with hover transitions */
+footer ul.list-style-none.d-flex li,
+footer ul.d-flex li {
+  margin-right: 8px !important;
+}
+footer ul.d-flex li a img,
+footer ul.list-style-none.d-flex li a img {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 50% !important;
+  padding: 10px !important;
+  width: 42px !important;
+  height: 42px !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+footer ul.d-flex li a:hover img,
+footer ul.list-style-none.d-flex li a:hover img {
+  background-color: rgba(74, 222, 128, 0.15) !important;
+  border-color: #4ADE80 !important;
+  box-shadow: 0 0 15px rgba(74, 222, 128, 0.45) !important;
+  transform: scale(1.05) !important;
+}
+
+/* Copyright footer bar */
+.bg-bottom-footer {
+  background-color: rgba(5, 10, 8, 0.8) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+.bg-bottom-footer p {
+  color: #A7F3D0 !important;
 }
 .back-to-top-btn {
   display: inline-flex !important;
